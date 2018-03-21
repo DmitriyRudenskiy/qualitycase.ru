@@ -1,15 +1,28 @@
 #!/usr/bin/env node
 
+const compress = require('koa-compress');
+
 const PORT = process.env.PORT || 4000;
 const env = process.env.NODE_ENV || 'development';
 const src = env === 'production' ? './../src/app.js' : './../src/app.js';
 
-if (env === 'development') {
-}
+
 
 console.log("Running in :"  + env);
 
 const app = require(src).default;
+
+if (env === 'development') {
+
+    app.use(async function(ctx, next) {
+        console.log(ctx.method + ' ' + ctx.url);
+        await next();
+    });
+
+} else {
+    // HTTP compression
+    app.use(compress({}));
+}
 
 app.listen(PORT, function() {
     console.log("Server listening on port: " + PORT);
