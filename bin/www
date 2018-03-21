@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const PORT = process.env.PORT || 4000;
+const env = process.env.NODE_ENV || 'development';
+const src = env === 'production' ? './../src/app.js' : './../src/app.js';
+
+if (env === 'development') {
+}
+
+console.log("Running in :"  + env);
+
+const app = require(src).default;
+
+app.listen(PORT, function() {
+    console.log("Server listening on port: " + PORT);
+});
