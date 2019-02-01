@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/idea.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+
+    <title>Hello, world!</title>
+    <style>
+      p {
+        font-family: 'Spectral', serif;
+      }
+
+      h1, h2, h3, h4, h5 {
+        font-family: 'Lora', serif;
+      }
+
+      pre code {
+        background: #fbfdff !important;
+        border: 1px solid #e5e8ec;
+        border-radius: 4px;
+        display: block !important;
+        font-size: inherit;
+        line-height: 1.6;
+        overflow: auto;
+        padding: 17px 20px 20px !important;
+        white-space: unset;
+      }
+
+      @media screen and (min-width: 841px) {
+        p {
+          font-size: 20px;
+          line-height: 36px;
+        }
+      }
+
+      @media screen and (max-width: 840px) {
+        p {
+          font-size:18px;
+          line-height: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2>Настала ночь первой упавшей звезды.</h2>
+        <p>Обе стороны моей натуры обладали общей памятью.</p>
+        <p>С корабля Земля казалась сверкающим серпом, лежащим далеко внизу.</p>
+
+        <p>Всякий раз, когда мы сталкивались с новым набором данных в прошлом, мы отображали первые несколько строк, чтобы ознакомиться с различными столбцами, типами значений и некоторыми примерами данных.
+        <p>Мы загрузили набор данных по статистике результатов работы в базу данных. База данных обычно состоит из нескольких связанных таблиц данных. Каждая таблица содержит строки и столбцы, как файл CSV. Мы будем работать с файлом базы данных jobs.db , который содержит одну таблицу с именем recent_grads . В последующих курсах мы научимся работать с базой данных, содержащей несколько таблиц.
+
+        <pre><code class="javascript">
+async function () {
+  var user = await fetchJson('/api/user/self');
+  var interests = await fetchJson('/api/user/interests?userId=' + self.id);
+  var recommendations = await Promise.all(
+      interests.map(i => fetchJson('/api/recommendations?topic=' + i)));
+  render(user, interests, recommendations);
+}();
+        </code></pre>
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/javascript.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

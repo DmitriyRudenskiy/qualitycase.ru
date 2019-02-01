@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://emmitfenn.com/assets/meta/metaapple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://emmitfenn.com/assets/meta/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://emmitfenn.com/assets/meta/favicon-16x16.png">
+	<link rel="manifest" href="https://emmitfenn.com/assets/meta/manifest.json">
+	<link rel="mask-icon" href="https://emmitfenn.com/assets/meta/safari-pinned-tab.svg" color="#5bbad5">
+
+	<title>Emmit Fenn</title>
+
+	<meta name="description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+
+	<meta name="twitter:title" content="Emmit Fenn">
+	<meta name="twitter:site" content="https://emmitfenn.com/">
+	<meta name="twitter:creator" content="@EmmitFennMusic">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+	<meta name="twitter:image" content="https://emmitfenn.com/assets/meta/cover.jpg">
+
+	<meta property="og:title" content="Emmit Fenn">
+	<meta property="og:site_name" content="Emmit Fenn">
+	<meta property="og:url" content="https://emmitfenn.com/">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image" content="https://emmitfenn.com/assets/meta/cover.jpg">
+
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+	<script></script>
+</head>
+<body>
+<ul>
+	<li>Класс и объект</li>
+	<li>Свойства объекта</li>
+	<li>Методы объекта</li>
+	<li>Методы __construct и __destruct</li>
+	<li>Класс для работы с файлом</li>
+	<li>Статические свойства и методы</li>
+	<li>Наследование.</li>
+	<li>Модификаторы доступа</li>
+	<li>Абстрактные классы и интерфейсы</li>
+	<li>Интерфейсы и контроль типа</li>
+	<li>Автозагрузка и пространства имен</li>
+	<li>Composer и автозагрузка</li>
+	<li>Трейты</li>
+	<li>Позднее статическое связывание</li>
+	<li>Магические методы</li>
+	<li>Шаблоны проектирования</li>
+
+	<pre>
+		interface OutputInterface
+{
+    public function load();
+}
+
+class SerializedArrayOutput implements OutputInterface
+{
+    public function load()
+    {
+        return serialize($arrayOfData);
+    }
+}
+
+class JsonStringOutput implements OutputInterface
+{
+    public function load()
+    {
+        return json_encode($arrayOfData);
+    }
+}
+
+class ArrayOutput implements OutputInterface
+{
+    public function load()
+    {
+        return $arrayOfData;
+    }
+}
+	</pre>
+
+	<pre>
+		class Template1 extends HtmlTemplate
+{
+    protected $html;
+
+    public function __construct()
+    {
+        $this->html = "<p>__text__</p>";
+    }
+
+    public function set($html)
+    {
+        $this->html = $html;
+    }
+
+    public function render()
+    {
+        echo $this->html;
+    }
+}
+
+class Template2 extends HtmlTemplate
+{
+    protected $element;
+
+    public function __construct($s)
+    {
+        $this->element = $s;
+        $this->set("<h2>" . $this->_html . "</h2>");
+    }
+
+    public function __call($name, $args)
+    {
+        $this->element->$name($args[0]);
+    }
+}
+
+class Template3 extends HtmlTemplate
+{
+    protected $element;
+
+    public function __construct($s)
+    {
+        $this->element = $s;
+        $this->set("<u>" . $this->_html . "</u>");
+    }
+
+    public function __call($name, $args)
+    {
+        $this->element->$name($args[0]);
+    }
+}
+	</pre>
+
+	<h1>Реестр</h1>
+	<pre>
+class Package
+{
+    protected static $data = array();
+
+    public static function set($key, $value)
+    {
+        self::$data[$key] = $value;
+    }
+
+    public static function get($key)
+    {
+        return isset(self::$data[$key]) ? self::$data[$key] : null;
+    }
+
+    final public static function removeObject($key)
+    {
+        if (array_key_exists($key, self::$data)) {
+            unset(self::$data[$key]);
+        }
+    }
+}
+	</pre>
+
+	Адаптер
+	Этот шаблон позволяет вам создавать класс с новым интерфейсом, с тем, чтобы этот класс мог использоваться системой с определенными методами вызова:
+
+<h3>Паттерн проектирования Iterator (Итератор) на PHP</h3>
+	<pre>
+		class MyArrayIterator implements Iterator
+{
+    protected $array = array();
+    public function __construct(array $array)
+    {
+        $this->array = $array;
+    }
+    public function current()
+    {
+        return current($this->array);
+    }
+    public function next()
+    {
+        next($this->array);
+    }
+    public function key()
+    {
+        return key($this->array);
+    }
+    public function valid()
+    {
+        return isset($this->array[$this->key()]);
+    }
+    public function rewind()
+    {
+        reset($this->array);
+    }
+}
+	</pre>
+
+	<pre>
+		class Purchase
+{
+    protected $cost;
+    public function __construct($cost)
+    {
+        $this->cost = $cost;
+    }
+    public function getCost()
+    {
+        return $this->cost;
+    }
+}
+class Cart implements IteratorAggregate
+{
+    protected $purchases;
+    public function addPurchase(Purchase $purchase)
+    {
+        $this->purchases[] = $purchase;
+    }
+    public function getCost()
+    {
+        $cost = 0;
+        foreach ($this->purchases as $purchase) {
+            $cost += $purchase->getCost();
+        }
+        return $cost;
+    }
+    public function getIterator()
+    {
+        // Я использовал интерфейс IteratorAggregate, так как его гораздо
+        // проще реализовывать.
+        // Если мне понадобится добавить дополнительную логику,
+        // я выполню рефакторинг и реализую интерфейс Iterator
+        return new ArrayIterator($this->purchases);
+    }
+}
+$cart = new Cart();
+$cart->addPurchase(new Purchase(10));
+$cart->addPurchase(new Purchase(15));
+var_dump($cart->getCost()); // 25
+foreach($cart as $purchase) {
+    var_dump($purchase->getCost());
+}
+	</pre>
+</ul>
+
+<h1>Паттерн проектирования Фасад (Facade) на PHP</h1>
+<pre>
+
+</pre>
+</body>
+</html>

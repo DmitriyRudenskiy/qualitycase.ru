@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://emmitfenn.com/assets/meta/metaapple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://emmitfenn.com/assets/meta/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://emmitfenn.com/assets/meta/favicon-16x16.png">
+	<link rel="manifest" href="https://emmitfenn.com/assets/meta/manifest.json">
+	<link rel="mask-icon" href="https://emmitfenn.com/assets/meta/safari-pinned-tab.svg" color="#5bbad5">
+
+	<title>Emmit Fenn</title>
+
+	<meta name="description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+
+	<meta name="twitter:title" content="Emmit Fenn">
+	<meta name="twitter:site" content="https://emmitfenn.com/">
+	<meta name="twitter:creator" content="@EmmitFennMusic">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+	<meta name="twitter:image" content="https://emmitfenn.com/assets/meta/cover.jpg">
+
+	<meta property="og:title" content="Emmit Fenn">
+	<meta property="og:site_name" content="Emmit Fenn">
+	<meta property="og:url" content="https://emmitfenn.com/">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image" content="https://emmitfenn.com/assets/meta/cover.jpg">
+
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+	<script></script>
+</head>
+<body>
+<div class="kc__wrap" itemscope="" itemtype="http://schema.org/ItemList"><span style="display: block; cursor: pointer;" class="kc-title kc__title" id="kcmenu" itemprop="name">Оглавление ▴</span>
+<ul class="contents">
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#do-php-5.3">
+						<span itemprop="name">До PHP 5.3</span>
+					</a>
+					 <meta itemprop="position" content="1">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#$str1-0-sintaksis-polucheniya-simvola-stroki">
+						<span itemprop="name"><var>$str1{0}</var> — синтаксис получения символа строки</span>
+					</a>
+					 <meta itemprop="position" content="2">
+				</li>
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#php-5.3">
+						<span itemprop="name">PHP 5.3 </span>
+					</a>
+					 <meta itemprop="position" content="3">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#sokrashhenie-ternarnogo-operatora">
+						<span itemprop="name"><var>?:</var> — сокращение тернарного оператора</span>
+					</a>
+					 <meta itemprop="position" content="4">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#$func-=-function-anonimnye-lyambda-funktsii">
+						<span itemprop="name"><var>$func = function(){};</var> — анонимные (лямбда) функции</span>
+					</a>
+					 <meta itemprop="position" content="5">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#method---var-poluchenie-obekta-iz-metoda-funktsii">
+						<span itemprop="name"><var>method()-&gt;var</var> — получение объекта из метода/функции</span>
+					</a>
+					 <meta itemprop="position" content="6">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#lt-lt-lt-'doc'-podderzhka-nowdoc">
+						<span itemprop="name"><var>&lt;&lt;&lt;'DOC'</var> — поддержка NOWDOC</span>
+					</a>
+					 <meta itemprop="position" content="7">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#namespace-podderzhka-prostranstv-imen">
+						<span itemprop="name"><var>namespace</var> — поддержка пространств имен</span>
+					</a>
+					 <meta itemprop="position" content="8">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#__dir__-novaya-magicheskaya-konstanta">
+						<span itemprop="name"><var>__DIR__</var> — новая магическая константа</span>
+					</a>
+					 <meta itemprop="position" content="9">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#$class-$foo-dinamichnoe-ukazanie-klassa">
+						<span itemprop="name"><var>$class::$foo</var> — динамичное указание класса</span>
+					</a>
+					 <meta itemprop="position" content="10">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#const-klyuchevoe-slovo-dlya-sozdaniya-konstant-vne-klassov">
+						<span itemprop="name"><var>const</var> — ключевое слово для создания констант вне классов</span>
+					</a>
+					 <meta itemprop="position" content="11">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#static-method-staticheskoe-svyazyvanie">
+						<span itemprop="name"><var>static::method()</var> — статическое связывание</span>
+					</a>
+					 <meta itemprop="position" content="12">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#goto-hell-operator-goto">
+						<span itemprop="name"><var>goto hell;</var> — оператор goto</span>
+					</a>
+					 <meta itemprop="position" content="13">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#__callstatic-__invoke-magicheskie-metody">
+						<span itemprop="name"><var>__callStatic()</var>, <var>__invoke()</var> — магические методы</span>
+					</a>
+					 <meta itemprop="position" content="14">
+				</li>
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#php-5.4">
+						<span itemprop="name">PHP 5.4</span>
+					</a>
+					 <meta itemprop="position" content="15">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#lt-=-korotkaya-zapis-vyvoda-na-ekran-rabotaet-vsegda">
+						<span itemprop="name"><var>&lt;?=</var> — короткая запись вывода на экран работает всегда</span>
+					</a>
+					 <meta itemprop="position" content="16">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#1-2-zapis-massiva-bez-slova-array">
+						<span itemprop="name"><var>[1,2]</var> — запись массива, без слова array</span>
+					</a>
+					 <meta itemprop="position" content="17">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#trait-class-primesi-trejty">
+						<span itemprop="name"><var>trait Class {}</var> — примеси (трейты)</span>
+					</a>
+					 <meta itemprop="position" content="18">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#foo-0-bystroe-poluchenie-elementa-massiva">
+						<span itemprop="name"><var>foo()[0]</var> — быстрое получение элемента массива</span>
+					</a>
+					 <meta itemprop="position" content="19">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#new-foo---method-dostup-k-elementu-obekta-pri-ego-sozdanii">
+						<span itemprop="name"><var>(new Foo)-&gt;method()</var> — доступ к элементу объекта при его создании</span>
+					</a>
+					 <meta itemprop="position" content="20">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#class-'foo'-dinamichnoe-ukazanie-metoda">
+						<span itemprop="name"><var>Class::{'foo'}()</var> — динамичное указание метода</span>
+					</a>
+					 <meta itemprop="position" content="21">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#callable-novyj-tip-dlya-argumentov-funktsii-metoda">
+						<span itemprop="name"><var>callable</var> — новый тип для аргументов функции/метода</span>
+					</a>
+					 <meta itemprop="position" content="22">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#uluchshena-proizvoditelnost">
+						<span itemprop="name"><var>@</var> — улучшена производительность</span>
+					</a>
+					 <meta itemprop="position" content="23">
+				</li>
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#php-5.5">
+						<span itemprop="name">PHP 5.5</span>
+					</a>
+					 <meta itemprop="position" content="24">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#1-3-4-2-foobar-2-razymenovaniya-tolko-sozdannyh-massivov-i-strok">
+						<span itemprop="name"><var>[1,3,4][2]</var>, <var>"foobar"{2}</var> — разыменования только-созданных массивов и строк</span>
+					</a>
+					 <meta itemprop="position" content="25">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#empty-mozhno-primenyat-k-rezultatam-funktsij-i-vyrazhenij">
+						<span itemprop="name"><var>empty()</var> — можно применять к результатам функций и выражений</span>
+					</a>
+					 <meta itemprop="position" content="26">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#list-v-foreach">
+						<span itemprop="name"><var>list() в foreach</var></span>
+					</a>
+					 <meta itemprop="position" content="27">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#finally-v-konstruktsii-try-catch">
+						<span itemprop="name"><var>finally</var> — в конструкции try/catch</span>
+					</a>
+					 <meta itemprop="position" content="28">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#class-class-dlya-poluchenie-imeni-klassa-v-prostranstvah">
+						<span itemprop="name"><var>Class::class</var> — для получение имени класса в пространствах</span>
+					</a>
+					 <meta itemprop="position" content="29">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#yield-sozdanie-generatorov">
+						<span itemprop="name"><var>yield</var> — создание генераторов</span>
+					</a>
+					 <meta itemprop="position" content="30">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#api-dlya-heshirovaniya-parolej">
+						<span itemprop="name">API для хэширования паролей</span>
+					</a>
+					 <meta itemprop="position" content="31">
+				</li>
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#php-5.6">
+						<span itemprop="name">PHP 5.6</span>
+					</a>
+					 <meta itemprop="position" content="32">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#const-plus-=-1-+-2-skalyarnye-vyrazheniya-v-konstantah-svojstvah-argum">
+						<span itemprop="name"><var>const PLUS = 1 + 2;</var> — скалярные выражения в константах/свойствах/аргументах функции</span>
+					</a>
+					 <meta itemprop="position" content="33">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#const-arr-=-'a'-'b'-konstanta-mozhet-hranit-massiv">
+						<span itemprop="name"><var>const ARR = ['a', 'b'];</var> — константа может хранить массив</span>
+					</a>
+					 <meta itemprop="position" content="34">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#func-...$args-ili-func-...-2-3-neizvestnoe-chislo-argumentov-funktsii-">
+						<span itemprop="name"><var>func( ...$args )</var> или <var>func( ...[2, 3] )</var> — неизвестное число аргументов функции или распаковка массива с помощью '...' (splat оператор)</span>
+					</a>
+					 <meta itemprop="position" content="35">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#**-operator-vozvedeniya-v-stepen">
+						<span itemprop="name"><var>**</var> — оператор возведения в степень</span>
+					</a>
+					 <meta itemprop="position" content="36">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#use-function-i-use-const-import-funktsij-i-konstant-v-prostranstvo">
+						<span itemprop="name"><var>use function</var> и <var>use const</var> — импорт функций и констант в пространство</span>
+					</a>
+					 <meta itemprop="position" content="37">
+				</li>
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#kuda-delsya-php-6">
+						<span itemprop="name">Куда делся PHP 6?</span>
+					</a>
+					 <meta itemprop="position" content="38">
+				</li>
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#php-7">
+						<span itemprop="name">PHP 7</span>
+					</a>
+					 <meta itemprop="position" content="39">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#$a-''-odnovremennaya-proverka-isset-i-poluchenie-znacheniya">
+						<span itemprop="name"><var>$a ?? ''</var> — одновременная проверка isset и получение значения</span>
+					</a>
+					 <meta itemprop="position" content="40">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#$a-lt-=-$b-odnovremennoe-vypolnenie-treh-sravnenij-bolshe-ravno-ili-me">
+						<span itemprop="name"><var>$a &lt;=&gt; $b</var> — одновременное выполнение трех сравнений: больше, равно или меньше.</span>
+					</a>
+					 <meta itemprop="position" content="41">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#define-'foo'-1-2-peredacha-massiva-konstante-cherez-define">
+						<span itemprop="name"><var>define('FOO', [1,2]);</var> — передача массива константе через define()</span>
+					</a>
+					 <meta itemprop="position" content="42">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#use-name-space-a-b-c-as-c-gruppirovka-importa-pri-pomoshhi-use">
+						<span itemprop="name"><var>use name\space\{A, B, C as c};</var> — группировка импорта при помощи use</span>
+					</a>
+					 <meta itemprop="position" content="43">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#int-float-bool-novye-tipy-dlya-argumentov-funktsii-metoda">
+						<span itemprop="name"><var>int, float, bool</var> — новые типы для аргументов функции/метода</span>
+					</a>
+					 <meta itemprop="position" content="44">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#int-float-bool-array-ukazanie-vozvrashhaemyh-tipov-dlya-funktsii-metod">
+						<span itemprop="name"><var>int, float, bool, array</var> — указание возвращаемых типов для функции/метода</span>
+					</a>
+					 <meta itemprop="position" content="45">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#foo-$a-$b-$c-$$foo--bar-edinyj-sintaksis-peremennyh-sleva-napravo">
+						<span itemprop="name"><var>foo()(), $a::$b::$c, $$foo-&gt;bar</var> — единый синтаксис переменных: СЛЕВА НАПРАВО</span>
+					</a>
+					 <meta itemprop="position" content="46">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#foreach-izmenena-logika-raboty">
+						<span itemprop="name">foreach — изменена логика работы</span>
+					</a>
+					 <meta itemprop="position" content="47">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#$class-=-new-class-anonimnye-klassy">
+						<span itemprop="name"><var>$class = new class{}</var> — анонимные классы</span>
+					</a>
+					 <meta itemprop="position" content="48">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#yield-...-return-99-vozvrat-return-vyrazhenij-v-generatorah">
+						<span itemprop="name"><var>yield ... return 99;</var> — возврат (return) выражений в генераторах</span>
+					</a>
+					 <meta itemprop="position" content="49">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#yield-from-gen-delegirovanie-generatorov">
+						<span itemprop="name"><var>yield from gen()</var> — делегирование генераторов</span>
+					</a>
+					 <meta itemprop="position" content="50">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#eshhe-novinki-php-7.0">
+						<span itemprop="name">Еще новинки PHP 7.0</span>
+					</a>
+					 <meta itemprop="position" content="51">
+				</li>
+	<li class="top" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#php-7.1">
+						<span itemprop="name">PHP 7.1</span>
+					</a>
+					 <meta itemprop="position" content="52">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#void-vozvrashhaemyj-tip">
+						<span itemprop="name"><var>void</var> — возвращаемый тип</span>
+					</a>
+					 <meta itemprop="position" content="53">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#iterable-novyj-psevdo-tip">
+						<span itemprop="name"><var>iterable</var> — новый псевдо-тип</span>
+					</a>
+					 <meta itemprop="position" content="54">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#null-tip-peredavaemyh-vozvrashhaemyh-znachenij">
+						<span itemprop="name"><var>null</var> — тип передаваемых/возвращаемых значений</span>
+					</a>
+					 <meta itemprop="position" content="55">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#1-otritsatelnoe-znachenie-smeshheniya-v-strokah">
+						<span itemprop="name"><var>{-1}</var> — отрицательное значение смещения в строках</span>
+					</a>
+					 <meta itemprop="position" content="56">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#'key'=-$a-=-'key'=-'znachenie'-podderzhka-klyuchej-i-novyj-sintaksis-l">
+						<span itemprop="name"><var>['key'=&gt;$a] = ['key'=&gt;'Значение']</var> — поддержка ключей и новый синтаксис list()</span>
+					</a>
+					 <meta itemprop="position" content="57">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#oblast-vidimosti-konstant-v-klassah">
+						<span itemprop="name">Область видимости констант в классах</span>
+					</a>
+					 <meta itemprop="position" content="58">
+				</li>
+	<li style="margin-left:40px;" class="sub sub_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+					<a rel="nofollow" itemprop="url" href="#zametki-po-php-7.1">
+						<span itemprop="name">Заметки по PHP 7.1</span>
+					</a>
+					 <meta itemprop="position" content="59">
+				</li>
+</ul>
+</div>
+</body>
+</html>
