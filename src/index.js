@@ -6,7 +6,7 @@ require('dotenv').config()
 const app = require('./app')
 // const db = require('./models/db')
 
-const PORT = parseInt(process.env.PORT, 10) || 3005
+const PORT = parseInt(process.env.PORT, 10) || 7100
 const HOST = process.env.HOST || '127.0.0.1'
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
