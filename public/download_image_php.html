@@ -1,0 +1,19 @@
+<span id="ezoic-pub-ad-placeholder-103"></span>
+<h1>Image headers with PHP</h1>
+Posted in <a href="/article/php/">PHP</a> - <i><time class="updated" datetime="">Last updated Jul. 22, 2008</time></i>
+<p>If you ever need to send an image file with PHP from the web server to the web browser you need to add an additional header using the header() function so the browser knows it's an image and not regular HTML. This post looks at the headers you need to use.</p>
+<p>There are a variety of methods for creating and manipulating images with PHP, as well as simply opening the file and then sending the contents to the web browser. All of these methods require setting the Content-Type header to the image's mime type so the browser knows what sort of file type it is.</p>
+<p>The following examples show doing this for GIF, JPEG and PNG images, and then use the readfile() function to pass through the content of the file to the web browser.</p>
+<h2>GIF:</h2>
+<pre>header('Content-Type: image/gif');
+readfile('path/to/myimage.gif');
+</pre>
+<h2>JPEG:</h2>
+<pre>header('Content-Type: image/jpeg');
+readfile('path/to/myimage.jpg');
+</pre>
+<h2>PNG:</h2>
+<pre>header('Content-Type: image/png');
+readfile('path/to/myimage.png');
+</pre>
+<p>You can use the same header functions for sending other mime types as well, for example when sending a PDF or Flash file to the browser.</p>
