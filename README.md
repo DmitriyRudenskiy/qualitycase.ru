@@ -10,8 +10,7 @@
     node_modules/.bin/sequelize db:migrate --migrations-path=app/database/migrations/ --config=app/database/config.js
     
 # Запускаем сервер
-    node app/
-    
+    node src/
     
 # Перед git commit
 

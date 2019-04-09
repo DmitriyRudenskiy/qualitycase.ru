@@ -1,27 +1,651 @@
-<!doctype html>
-<html lang="ru">
-<head>
+<html lang="ru" data-lt-installed="true"><head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{% block title %}{% endblock %}</title>
-    <style>
-        dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}address,dl,ol,p,pre,ul{margin-bottom:1rem}body,caption{text-align:left}button,hr,input{overflow:visible}pre,textarea{overflow:auto}article,aside,dialog,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}dd,h1,h2,h3,h4,h5,h6,label,legend{margin-bottom:.5rem}address,legend{line-height:inherit}progress,sub,sup{vertical-align:baseline}label,output{display:inline-block}.flex-column,.flex-row{-webkit-box-direction:normal!important}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;box-sizing:border-box;-ms-overflow-style:scrollbar}@-ms-viewport{width:device-width}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff}[tabindex="-1"]:focus{outline:0!important}hr{box-sizing:content-box;height:0}abbr[data-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0}address{font-style:normal}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-left:0}blockquote,figure{margin:0 0 1rem}dfn{font-style:italic}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}a:hover{color:#0056b3;text-decoration:underline}a:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}pre{-ms-overflow-style:scrollbar}img{vertical-align:middle;border-style:none}svg:not(:root){overflow:hidden}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;caption-side:bottom}th{text-align:inherit}button{border-radius:0}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=date],input[type=time],input[type=datetime-local],input[type=month]{-webkit-appearance:listbox}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{width:100%;max-width:100%;padding:0;font-size:1.5rem;color:inherit;white-space:normal}.container,.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;width:100%}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:none}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}summary{display:list-item;cursor:pointer}template{display:none}[hidden]{display:none!important}@-ms-viewport{width:device-width}*,::after,::before{box-sizing:inherit}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>.col,.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-1,.col-auto{-webkit-box-flex:0}.col-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-2,.col-3{-webkit-box-flex:0}.col-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-4,.col-5{-webkit-box-flex:0}.col-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-6,.col-7{-webkit-box-flex:0}.col-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-8,.col-9{-webkit-box-flex:0}.col-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-10,.col-11{-webkit-box-flex:0}.col-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-first{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.order-last{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13}.order-0{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.order-1{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.order-2{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.order-3{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.order-4{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}.order-5{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}.order-6{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}.order-7{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}.order-8{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}.order-9{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}.order-10{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10}.order-11{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11}.order-12{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}.offset-1{margin-left:8.333333%}.offset-2{margin-left:16.666667%}.offset-3{margin-left:25%}.offset-4{margin-left:33.333333%}.offset-5{margin-left:41.666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.333333%}.offset-8{margin-left:66.666667%}.offset-9{margin-left:75%}.offset-10{margin-left:83.333333%}.offset-11{margin-left:91.666667%}.d-none{display:none!important}.d-inline{display:inline!important}.d-inline-block{display:inline-block!important}.d-block{display:block!important}.d-table{display:table!important}.d-table-row{display:table-row!important}.d-table-cell{display:table-cell!important}.d-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.d-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}@media (min-width:576px){.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-sm-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-sm-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-sm-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-sm-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-sm-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-sm-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-sm-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-sm-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-sm-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-sm-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-sm-first{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.order-sm-last{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13}.order-sm-0{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.order-sm-1{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.order-sm-2{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.order-sm-3{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.order-sm-4{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}.order-sm-5{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}.order-sm-6{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}.order-sm-7{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}.order-sm-8{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}.order-sm-9{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}.order-sm-10{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10}.order-sm-11{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11}.order-sm-12{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}.offset-sm-0{margin-left:0}.offset-sm-1{margin-left:8.333333%}.offset-sm-2{margin-left:16.666667%}.offset-sm-3{margin-left:25%}.offset-sm-4{margin-left:33.333333%}.offset-sm-5{margin-left:41.666667%}.offset-sm-6{margin-left:50%}.offset-sm-7{margin-left:58.333333%}.offset-sm-8{margin-left:66.666667%}.offset-sm-9{margin-left:75%}.offset-sm-10{margin-left:83.333333%}.offset-sm-11{margin-left:91.666667%}.d-sm-none{display:none!important}.d-sm-inline{display:inline!important}.d-sm-inline-block{display:inline-block!important}.d-sm-block{display:block!important}.d-sm-table{display:table!important}.d-sm-table-row{display:table-row!important}.d-sm-table-cell{display:table-cell!important}.d-sm-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.d-sm-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}}@media (min-width:768px){.col-md{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-md-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-md-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-md-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-md-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-md-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-md-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-md-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-md-first{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.order-md-last{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13}.order-md-0{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.order-md-1{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.order-md-2{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.order-md-3{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.order-md-4{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}.order-md-5{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}.order-md-6{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}.order-md-7{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}.order-md-8{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}.order-md-9{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}.order-md-10{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10}.order-md-11{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11}.order-md-12{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}.offset-md-0{margin-left:0}.offset-md-1{margin-left:8.333333%}.offset-md-2{margin-left:16.666667%}.offset-md-3{margin-left:25%}.offset-md-4{margin-left:33.333333%}.offset-md-5{margin-left:41.666667%}.offset-md-6{margin-left:50%}.offset-md-7{margin-left:58.333333%}.offset-md-8{margin-left:66.666667%}.offset-md-9{margin-left:75%}.offset-md-10{margin-left:83.333333%}.offset-md-11{margin-left:91.666667%}.d-md-none{display:none!important}.d-md-inline{display:inline!important}.d-md-inline-block{display:inline-block!important}.d-md-block{display:block!important}.d-md-table{display:table!important}.d-md-table-row{display:table-row!important}.d-md-table-cell{display:table-cell!important}.d-md-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.d-md-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}}@media (min-width:992px){.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-lg-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-lg-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-lg-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-lg-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-lg-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-lg-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-lg-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-lg-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-lg-first{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.order-lg-last{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13}.order-lg-0{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.order-lg-1{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.order-lg-2{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.order-lg-3{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.order-lg-4{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}.order-lg-5{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}.order-lg-6{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}.order-lg-7{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}.order-lg-8{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}.order-lg-9{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}.order-lg-10{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10}.order-lg-11{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11}.order-lg-12{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}.offset-lg-0{margin-left:0}.offset-lg-1{margin-left:8.333333%}.offset-lg-2{margin-left:16.666667%}.offset-lg-3{margin-left:25%}.offset-lg-4{margin-left:33.333333%}.offset-lg-5{margin-left:41.666667%}.offset-lg-6{margin-left:50%}.offset-lg-7{margin-left:58.333333%}.offset-lg-8{margin-left:66.666667%}.offset-lg-9{margin-left:75%}.offset-lg-10{margin-left:83.333333%}.offset-lg-11{margin-left:91.666667%}.d-lg-none{display:none!important}.d-lg-inline{display:inline!important}.d-lg-inline-block{display:inline-block!important}.d-lg-block{display:block!important}.d-lg-table{display:table!important}.d-lg-table-row{display:table-row!important}.d-lg-table-cell{display:table-cell!important}.d-lg-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.d-lg-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}}@media (min-width:1200px){.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-xl-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-xl-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-xl-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-xl-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-xl-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-xl-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-xl-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-xl-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-xl-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-xl-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-xl-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-xl-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-xl-first{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.order-xl-last{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13}.order-xl-0{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0}.order-xl-1{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.order-xl-2{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.order-xl-3{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.order-xl-4{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}.order-xl-5{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}.order-xl-6{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}.order-xl-7{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}.order-xl-8{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}.order-xl-9{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}.order-xl-10{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10}.order-xl-11{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11}.order-xl-12{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}.offset-xl-0{margin-left:0}.offset-xl-1{margin-left:8.333333%}.offset-xl-2{margin-left:16.666667%}.offset-xl-3{margin-left:25%}.offset-xl-4{margin-left:33.333333%}.offset-xl-5{margin-left:41.666667%}.offset-xl-6{margin-left:50%}.offset-xl-7{margin-left:58.333333%}.offset-xl-8{margin-left:66.666667%}.offset-xl-9{margin-left:75%}.offset-xl-10{margin-left:83.333333%}.offset-xl-11{margin-left:91.666667%}.d-xl-none{display:none!important}.d-xl-inline{display:inline!important}.d-xl-inline-block{display:inline-block!important}.d-xl-block{display:block!important}.d-xl-table{display:table!important}.d-xl-table-row{display:table-row!important}.d-xl-table-cell{display:table-cell!important}.d-xl-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.d-xl-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}}@media print{.d-print-none{display:none!important}.d-print-inline{display:inline!important}.d-print-inline-block{display:inline-block!important}.d-print-block{display:block!important}.d-print-table{display:table!important}.d-print-table-row{display:table-row!important}.d-print-table-cell{display:table-cell!important}.d-print-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.d-print-inline-flex{display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important}}.flex-row{-webkit-box-orient:horizontal!important;-ms-flex-direction:row!important;flex-direction:row!important}.flex-column{-webkit-box-orient:vertical!important;-ms-flex-direction:column!important;flex-direction:column!important}.flex-column-reverse,.flex-row-reverse{-webkit-box-direction:reverse!important}.flex-row-reverse{-webkit-box-orient:horizontal!important;-ms-flex-direction:row-reverse!important;flex-direction:row-reverse!important}.flex-column-reverse{-webkit-box-orient:vertical!important;-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.flex-wrap{-ms-flex-wrap:wrap!important;flex-wrap:wrap!important}.flex-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}.flex-wrap-reverse{-ms-flex-wrap:wrap-reverse!important;flex-wrap:wrap-reverse!important}.justify-content-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}.justify-content-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.justify-content-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.justify-content-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.justify-content-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}.align-items-start{-webkit-box-align:start!important;-ms-flex-align:start!important;align-items:flex-start!important}.align-items-end{-webkit-box-align:end!important;-ms-flex-align:end!important;align-items:flex-end!important}.align-items-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}.align-items-baseline{-webkit-box-align:baseline!important;-ms-flex-align:baseline!important;align-items:baseline!important}.align-items-stretch{-webkit-box-align:stretch!important;-ms-flex-align:stretch!important;align-items:stretch!important}.align-content-start{-ms-flex-line-pack:start!important;align-content:flex-start!important}.align-content-end{-ms-flex-line-pack:end!important;align-content:flex-end!important}.align-content-center{-ms-flex-line-pack:center!important;align-content:center!important}.align-content-between{-ms-flex-line-pack:justify!important;align-content:space-between!important}.align-content-around{-ms-flex-line-pack:distribute!important;align-content:space-around!important}.align-content-stretch{-ms-flex-line-pack:stretch!important;align-content:stretch!important}.align-self-auto{-ms-flex-item-align:auto!important;align-self:auto!important}.align-self-start{-ms-flex-item-align:start!important;align-self:flex-start!important}.align-self-end{-ms-flex-item-align:end!important;align-self:flex-end!important}.align-self-center{-ms-flex-item-align:center!important;align-self:center!important}.align-self-baseline{-ms-flex-item-align:baseline!important;align-self:baseline!important}.align-self-stretch{-ms-flex-item-align:stretch!important;align-self:stretch!important}@media (min-width:576px){.flex-sm-column,.flex-sm-row{-webkit-box-direction:normal!important}.flex-sm-row{-webkit-box-orient:horizontal!important;-ms-flex-direction:row!important;flex-direction:row!important}.flex-sm-column{-webkit-box-orient:vertical!important;-ms-flex-direction:column!important;flex-direction:column!important}.flex-sm-row-reverse{-webkit-box-orient:horizontal!important;-webkit-box-direction:reverse!important;-ms-flex-direction:row-reverse!important;flex-direction:row-reverse!important}.flex-sm-column-reverse{-webkit-box-orient:vertical!important;-webkit-box-direction:reverse!important;-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.flex-sm-wrap{-ms-flex-wrap:wrap!important;flex-wrap:wrap!important}.flex-sm-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}.flex-sm-wrap-reverse{-ms-flex-wrap:wrap-reverse!important;flex-wrap:wrap-reverse!important}.justify-content-sm-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}.justify-content-sm-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.justify-content-sm-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.justify-content-sm-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.justify-content-sm-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}.align-items-sm-start{-webkit-box-align:start!important;-ms-flex-align:start!important;align-items:flex-start!important}.align-items-sm-end{-webkit-box-align:end!important;-ms-flex-align:end!important;align-items:flex-end!important}.align-items-sm-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}.align-items-sm-baseline{-webkit-box-align:baseline!important;-ms-flex-align:baseline!important;align-items:baseline!important}.align-items-sm-stretch{-webkit-box-align:stretch!important;-ms-flex-align:stretch!important;align-items:stretch!important}.align-content-sm-start{-ms-flex-line-pack:start!important;align-content:flex-start!important}.align-content-sm-end{-ms-flex-line-pack:end!important;align-content:flex-end!important}.align-content-sm-center{-ms-flex-line-pack:center!important;align-content:center!important}.align-content-sm-between{-ms-flex-line-pack:justify!important;align-content:space-between!important}.align-content-sm-around{-ms-flex-line-pack:distribute!important;align-content:space-around!important}.align-content-sm-stretch{-ms-flex-line-pack:stretch!important;align-content:stretch!important}.align-self-sm-auto{-ms-flex-item-align:auto!important;align-self:auto!important}.align-self-sm-start{-ms-flex-item-align:start!important;align-self:flex-start!important}.align-self-sm-end{-ms-flex-item-align:end!important;align-self:flex-end!important}.align-self-sm-center{-ms-flex-item-align:center!important;align-self:center!important}.align-self-sm-baseline{-ms-flex-item-align:baseline!important;align-self:baseline!important}.align-self-sm-stretch{-ms-flex-item-align:stretch!important;align-self:stretch!important}}@media (min-width:768px){.flex-md-column,.flex-md-row{-webkit-box-direction:normal!important}.flex-md-row{-webkit-box-orient:horizontal!important;-ms-flex-direction:row!important;flex-direction:row!important}.flex-md-column{-webkit-box-orient:vertical!important;-ms-flex-direction:column!important;flex-direction:column!important}.flex-md-row-reverse{-webkit-box-orient:horizontal!important;-webkit-box-direction:reverse!important;-ms-flex-direction:row-reverse!important;flex-direction:row-reverse!important}.flex-md-column-reverse{-webkit-box-orient:vertical!important;-webkit-box-direction:reverse!important;-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.flex-md-wrap{-ms-flex-wrap:wrap!important;flex-wrap:wrap!important}.flex-md-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}.flex-md-wrap-reverse{-ms-flex-wrap:wrap-reverse!important;flex-wrap:wrap-reverse!important}.justify-content-md-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}.justify-content-md-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.justify-content-md-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.justify-content-md-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.justify-content-md-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}.align-items-md-start{-webkit-box-align:start!important;-ms-flex-align:start!important;align-items:flex-start!important}.align-items-md-end{-webkit-box-align:end!important;-ms-flex-align:end!important;align-items:flex-end!important}.align-items-md-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}.align-items-md-baseline{-webkit-box-align:baseline!important;-ms-flex-align:baseline!important;align-items:baseline!important}.align-items-md-stretch{-webkit-box-align:stretch!important;-ms-flex-align:stretch!important;align-items:stretch!important}.align-content-md-start{-ms-flex-line-pack:start!important;align-content:flex-start!important}.align-content-md-end{-ms-flex-line-pack:end!important;align-content:flex-end!important}.align-content-md-center{-ms-flex-line-pack:center!important;align-content:center!important}.align-content-md-between{-ms-flex-line-pack:justify!important;align-content:space-between!important}.align-content-md-around{-ms-flex-line-pack:distribute!important;align-content:space-around!important}.align-content-md-stretch{-ms-flex-line-pack:stretch!important;align-content:stretch!important}.align-self-md-auto{-ms-flex-item-align:auto!important;align-self:auto!important}.align-self-md-start{-ms-flex-item-align:start!important;align-self:flex-start!important}.align-self-md-end{-ms-flex-item-align:end!important;align-self:flex-end!important}.align-self-md-center{-ms-flex-item-align:center!important;align-self:center!important}.align-self-md-baseline{-ms-flex-item-align:baseline!important;align-self:baseline!important}.align-self-md-stretch{-ms-flex-item-align:stretch!important;align-self:stretch!important}}@media (min-width:992px){.flex-lg-column,.flex-lg-row{-webkit-box-direction:normal!important}.flex-lg-row{-webkit-box-orient:horizontal!important;-ms-flex-direction:row!important;flex-direction:row!important}.flex-lg-column{-webkit-box-orient:vertical!important;-ms-flex-direction:column!important;flex-direction:column!important}.flex-lg-row-reverse{-webkit-box-orient:horizontal!important;-webkit-box-direction:reverse!important;-ms-flex-direction:row-reverse!important;flex-direction:row-reverse!important}.flex-lg-column-reverse{-webkit-box-orient:vertical!important;-webkit-box-direction:reverse!important;-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.flex-lg-wrap{-ms-flex-wrap:wrap!important;flex-wrap:wrap!important}.flex-lg-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}.flex-lg-wrap-reverse{-ms-flex-wrap:wrap-reverse!important;flex-wrap:wrap-reverse!important}.justify-content-lg-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}.justify-content-lg-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.justify-content-lg-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.justify-content-lg-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.justify-content-lg-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}.align-items-lg-start{-webkit-box-align:start!important;-ms-flex-align:start!important;align-items:flex-start!important}.align-items-lg-end{-webkit-box-align:end!important;-ms-flex-align:end!important;align-items:flex-end!important}.align-items-lg-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}.align-items-lg-baseline{-webkit-box-align:baseline!important;-ms-flex-align:baseline!important;align-items:baseline!important}.align-items-lg-stretch{-webkit-box-align:stretch!important;-ms-flex-align:stretch!important;align-items:stretch!important}.align-content-lg-start{-ms-flex-line-pack:start!important;align-content:flex-start!important}.align-content-lg-end{-ms-flex-line-pack:end!important;align-content:flex-end!important}.align-content-lg-center{-ms-flex-line-pack:center!important;align-content:center!important}.align-content-lg-between{-ms-flex-line-pack:justify!important;align-content:space-between!important}.align-content-lg-around{-ms-flex-line-pack:distribute!important;align-content:space-around!important}.align-content-lg-stretch{-ms-flex-line-pack:stretch!important;align-content:stretch!important}.align-self-lg-auto{-ms-flex-item-align:auto!important;align-self:auto!important}.align-self-lg-start{-ms-flex-item-align:start!important;align-self:flex-start!important}.align-self-lg-end{-ms-flex-item-align:end!important;align-self:flex-end!important}.align-self-lg-center{-ms-flex-item-align:center!important;align-self:center!important}.align-self-lg-baseline{-ms-flex-item-align:baseline!important;align-self:baseline!important}.align-self-lg-stretch{-ms-flex-item-align:stretch!important;align-self:stretch!important}}@media (min-width:1200px){.flex-xl-column,.flex-xl-row{-webkit-box-direction:normal!important}.flex-xl-row{-webkit-box-orient:horizontal!important;-ms-flex-direction:row!important;flex-direction:row!important}.flex-xl-column{-webkit-box-orient:vertical!important;-ms-flex-direction:column!important;flex-direction:column!important}.flex-xl-row-reverse{-webkit-box-orient:horizontal!important;-webkit-box-direction:reverse!important;-ms-flex-direction:row-reverse!important;flex-direction:row-reverse!important}.flex-xl-column-reverse{-webkit-box-orient:vertical!important;-webkit-box-direction:reverse!important;-ms-flex-direction:column-reverse!important;flex-direction:column-reverse!important}.flex-xl-wrap{-ms-flex-wrap:wrap!important;flex-wrap:wrap!important}.flex-xl-nowrap{-ms-flex-wrap:nowrap!important;flex-wrap:nowrap!important}.flex-xl-wrap-reverse{-ms-flex-wrap:wrap-reverse!important;flex-wrap:wrap-reverse!important}.justify-content-xl-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}.justify-content-xl-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.justify-content-xl-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.justify-content-xl-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.justify-content-xl-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}.align-items-xl-start{-webkit-box-align:start!important;-ms-flex-align:start!important;align-items:flex-start!important}.align-items-xl-end{-webkit-box-align:end!important;-ms-flex-align:end!important;align-items:flex-end!important}.align-items-xl-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}.align-items-xl-baseline{-webkit-box-align:baseline!important;-ms-flex-align:baseline!important;align-items:baseline!important}.align-items-xl-stretch{-webkit-box-align:stretch!important;-ms-flex-align:stretch!important;align-items:stretch!important}.align-content-xl-start{-ms-flex-line-pack:start!important;align-content:flex-start!important}.align-content-xl-end{-ms-flex-line-pack:end!important;align-content:flex-end!important}.align-content-xl-center{-ms-flex-line-pack:center!important;align-content:center!important}.align-content-xl-between{-ms-flex-line-pack:justify!important;align-content:space-between!important}.align-content-xl-around{-ms-flex-line-pack:distribute!important;align-content:space-around!important}.align-content-xl-stretch{-ms-flex-line-pack:stretch!important;align-content:stretch!important}.align-self-xl-auto{-ms-flex-item-align:auto!important;align-self:auto!important}.align-self-xl-start{-ms-flex-item-align:start!important;align-self:flex-start!important}.align-self-xl-end{-ms-flex-item-align:end!important;align-self:flex-end!important}.align-self-xl-center{-ms-flex-item-align:center!important;align-self:center!important}.align-self-xl-baseline{-ms-flex-item-align:baseline!important;align-self:baseline!important}.align-self-xl-stretch{-ms-flex-item-align:stretch!important;align-self:stretch!important}}
-    </style>
+    <meta content="initial-scale=1" name="viewport">
+    <meta content="index, follow" name="robots">
+    <link rel="stylesheet" media="all" href="css/application-afeaf20d094a271eb74a7f29c196a265.css?v=1553084891383">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700?v=1553084891385" rel="stylesheet" type="text/css">
 </head>
-<body>
-{% block content %}{% endblock %}
-<script src="https://zeptojs.com/zepto.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116138745-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-116138745-1');
-</script>
-<script>
-    $(document).ready(function(){
-        console.log('I work!');
-    });
-</script>
+
+<body class="page-body topic-code">
+{% include 'menu.twig' %}
+
+<div class="page-content topic-code" style="height: auto;">
+    <main class="content">
+        <div class="content-banner">
+            <div class="content-banner-restricted-width">
+                <div class="content-banner__icon"><img class="content-banner__title-icon loading" src="https://static.tutsplus.com/assets/redesign/code-92f4d6cb84ab4ebc886f67060c059c44.svg" alt="Code" data-was-processed="true"></div>
+                <div class="content-banner__body">
+                    <h1 class="content-banner__title nolinks">Тест</h1>
+                </div>
+            </div>
+        </div>
+        <div class="content-title"></div>
+        <article class="post article view view--loaded">
+            <div class="layout__content-with-sidebar">
+
+                <div class="post-body view view--loaded">
+
+                    <div class="post-body__body">
+                        <div class="post-body__content">
+                            <figure class="final-product final-product--image"><img data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/final_image/yii2-home.jpg" alt="Final product image" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/final_image/yii2-home.jpg" data-was-processed="true">
+                                <figcaption>What You'll Be Creating</figcaption>
+                            </figure>
+                            <h4 class="nolinks">If you're asking, "what's Yii?" check out my earlier tutorial: <a href="http://code.tutsplus.com/articles/introduction-to-the-yii-framework--cms-20948" target="_self">Introduction to the Yii Framework</a>, which reviews the benefits of &nbsp;Yii and&nbsp;includes an overview of what's new in Yii 2.0, released October 12th, 2014.&nbsp;<br></h4>
+                            <p>This tutorial will walk you through installing Yii 2.0, setting up your local development environment, building a simple Hello World application, setting up your remote production environment for hosting&nbsp;and deploying your code from a GitHub repository.</p>
+                            <h2 class="nolinks">Installing Yii 2.0</h2>
+                            <h3 class="nolinks">Documentation</h3>
+                            <p>You can find <a href="http://www.yiiframework.com/doc-2.0/guide-start-installation.html" target="_self">detailed installation instructions here</a>; I'll walk you through the basics for a typical Mac OS X development environment. Yii 2.0 has a&nbsp;<a href="http://www.yiiframework.com/doc-2.0/guide-index.html">Definitive Guide</a>&nbsp;(<a href="http://stuff.cebe.cc/yii2-guide.pdf">PDF</a>)&nbsp;and a&nbsp;<a href="http://www.yiiframework.com/doc-2.0/index.html">Class Reference</a>&nbsp;which cover every detail of Yii. ca</p>
+                            <h3 class="nolinks">Installing Composer</h3>
+                            <p>Yii2 requires <a href="https://getcomposer.org/" target="_self">Composer</a>, a popular dependency manager for PHP. If you don't already have Composer installed, do the following:</p>
+                            <div>
+                                <div id="highlighter_498000" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash plain">curl -s http:</code><code class="bash plain">//getcomposer</code><code class="bash plain">.org</code><code class="bash plain">/installer</code> <code class="bash plain">| php</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash functions">mv</code> <code class="bash plain">composer.phar</code><code class="bash plain">/usr/local/bin/composer</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <h3 class="nolinks">Installing Yii2</h3>
+                            <p>Then, use Composer to install Yii2. The installation request requires that you use your own Github account credentials; <a href="http://github.com" target="_self">sign up</a> if you don't have an account.</p>
+                            <p>Let's call this first project, "hello":</p>
+                            <div>
+                                <div id="highlighter_349831" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash functions">cd</code> <code class="bash plain">~</code><code class="bash plain">/Sites</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash plain">composer global require</code><code class="bash string">"fxp/composer-asset-plugin:1.0.0-beta2"</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="bash plain">composer create-project --prefer-dist yiisoft</code><code class="bash plain">/yii2-app-basic</code> <code class="bash plain">hello</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Yii2 provides two different installation templates depending on the type of application you're developing: basic and advanced. For this tutorial, we'll use the basic application which is installed by default. The <a href="http://www.yiiframework.com/doc-2.0/guide-tutorial-advanced-app.html" target="_self">advanced application template</a> provides a front-end, back end and console access points for a more advanced web application, like a WordPress blog, it's administrative dashboard and background cron tasks.</p>
+                            <h2 class="nolinks">Setting Up Your Local Development Environment</h2>
+                            <p>I'm using free, open source&nbsp;<a href="http://www.mamp.info/en/" target="_self">MAMP for OS X</a>&nbsp;for my LAMP development. Make sure MAMP is running and its web and database servers are active. Then,&nbsp;create a&nbsp;symlink for MAMP to your <code class="inline">Sites</code> app directory:</p>
+                            <div>
+                                <div id="highlighter_888628" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash functions">cd</code> <code class="bash plain">/Applications/MAMP/htdocs</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash functions">ln</code> <code class="bash plain">-s ~</code><code class="bash plain">/Sites/hello/</code> <code class="bash plain">/Applications/MAMP/htdocs/hello</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Then, visit <a href="http://localhost:8888/hello/web">http://localhost:8888/hello/web</a>. You should see the Yii2 basic application template running with <a href="http://getbootstrap.com/" target="_self">Bootstrap 3.x</a>.&nbsp;</p>
+                            <p><img alt="Yii2 Newly Installed Basic Application Template" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/yii-hello-install.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/yii-hello-install.jpg" data-was-processed="true"><br></p>
+                            <p>That page will&nbsp;likely excite Yii 1.1 developers&nbsp;who've not had pre-configured&nbsp;support for the latest version of Bootstrap, the outstanding open source responsive CSS framework that's taken over quite a bit of the web.</p>
+                            <h2 class="nolinks">Yii Application Architecture</h2>
+                            <p>One of the most important features of the Yii Framework is that it&nbsp;provides a <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_self">Model View Controller</a> for PHP. Not only does this provide a more structured programming environment and easier to understand code, it simplifies a number of things that are difficult to do in PHP, like security and automated code generation. It also makes our code easier to extend and more reusable.</p>
+                            <p>With a Yii application, we direct all traffic to a single file: <code class="inline">/web/index.php</code> file. This built-in file loads Yii, any dependencies, and then runs your application.</p>
+                            <div>
+                                <div id="highlighter_679804" class="syntaxhighlighter php nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">01</div>
+                                                <div class="line number2 index1 alt1">02</div>
+                                                <div class="line number3 index2 alt2">03</div>
+                                                <div class="line number4 index3 alt1">04</div>
+                                                <div class="line number5 index4 alt2">05</div>
+                                                <div class="line number6 index5 alt1">06</div>
+                                                <div class="line number7 index6 alt2">07</div>
+                                                <div class="line number8 index7 alt1">08</div>
+                                                <div class="line number9 index8 alt2">09</div>
+                                                <div class="line number10 index9 alt1">10</div>
+                                                <div class="line number11 index10 alt2">11</div>
+                                                <div class="line number12 index11 alt1">12</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="php plain">&lt;?php</code></div>
+                                                    <div class="line number2 index1 alt1">&nbsp;</div>
+                                                    <div class="line number3 index2 alt2"><code class="php comments">// comment out the following two lines when deployed to production</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="php plain">defined(</code><code class="php string">'YII_DEBUG'</code><code class="php plain">)</code><code class="php keyword">or</code> <code class="php plain">define(</code><code class="php string">'YII_DEBUG'</code><code class="php plain">, true);</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="php plain">defined(</code><code class="php string">'YII_ENV'</code><code class="php plain">)</code><code class="php keyword">or</code> <code class="php plain">define(</code><code class="php string">'YII_ENV'</code><code class="php plain">,</code><code class="php string">'dev'</code><code class="php plain">);</code></div>
+                                                    <div class="line number6 index5 alt1">&nbsp;</div>
+                                                    <div class="line number7 index6 alt2"><code class="php keyword">require</code><code class="php plain">(__DIR__ .</code><code class="php string">'/../vendor/autoload.php'</code><code class="php plain">);</code></div>
+                                                    <div class="line number8 index7 alt1"><code class="php keyword">require</code><code class="php plain">(__DIR__ .</code><code class="php string">'/../vendor/yiisoft/yii2/Yii.php'</code><code class="php plain">);</code></div>
+                                                    <div class="line number9 index8 alt2">&nbsp;</div>
+                                                    <div class="line number10 index9 alt1"><code class="php variable">$config</code> <code class="php plain">=</code><code class="php keyword">require</code><code class="php plain">(__DIR__ .</code><code class="php string">'/../config/web.php'</code><code class="php plain">);</code></div>
+                                                    <div class="line number11 index10 alt2">&nbsp;</div>
+                                                    <div class="line number12 index11 alt1"><code class="php plain">(</code><code class="php keyword">new</code> <code class="php plain">yii\web\Application(</code><code class="php variable">$config</code><code class="php plain">))-&gt;run();</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>By default, this is the Index method in&nbsp;<code class="inline">/controllers/SiteController.php</code>:</p>
+                            <div>
+                                <div id="highlighter_152586" class="syntaxhighlighter php nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="php keyword">public</code> <code class="php keyword">function</code> <code class="php plain">actionIndex()</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">{</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php keyword">return</code> <code class="php variable">$this</code><code class="php plain">-&gt;render(</code><code class="php string">'index'</code><code class="php plain">);</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Generally, controllers are full of methods, but with minimal code like above. Controllers manage access,&nbsp;leverage models and render views. The bulk of intelligence should be built into your models and the views should generally produce relatively simple template operations.</p>
+                            <p>By default, Yii will render <code class="inline">/views/layouts/main.php</code> around your index view in <code class="inline">/views/site/index.php</code>. The <code class="inline">main.php</code> layout provides the HTML and CSS structure to the page, e.g. the toolbar and content area.&nbsp;Inside <code class="inline">main.php</code>, you'll see a brief call out to the content:</p>
+                            <div>
+                                <div id="highlighter_794594" class="syntaxhighlighter php nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                                <div class="line number5 index4 alt2">5</div>
+                                                <div class="line number6 index5 alt1">6</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="php plain">&lt;div</code><code class="php keyword">class</code><code class="php plain">=</code><code class="php string">"container"</code><code class="php plain">&gt;</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;?= Breadcrumbs::widget([</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'links'</code> <code class="php plain">=&gt; isset(</code><code class="php variable">$this</code><code class="php plain">-&gt;params[</code><code class="php string">'breadcrumbs'</code><code class="php plain">]) ?</code><code class="php variable">$this</code><code class="php plain">-&gt;params[</code><code class="php string">'breadcrumbs'</code><code class="php plain">] : [],</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">]) ?&gt;</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;?=</code><code class="php variable">$content</code> <code class="php plain">?&gt;</code></div>
+                                                    <div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/div&gt;</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>That <code class="inline">$content</code> variable will be replaced with the generated&nbsp;code from <code class="inline">/views/site/index.php</code>, which currently is static HTML code that generates the <strong>Congratulations!</strong> page shown&nbsp;above.</p>
+                            <h2 class="nolinks">Building Hello World!</h2>
+                            <h3 class="nolinks">Turning on Pretty URLs</h3>
+                            <p>First, let's enable Yii2's pretty URLs with <code class="inline">mod_rewrite</code>. On the Yii home page, if you click on the <strong>About</strong> menu option, the URL will be something like&nbsp;<a href="http://localhost:8888/hello/web/index.php?r=site%2Fabout">http://localhost:8888/hello/web/index.php?r=site%2Fabout</a>. We'd like to change that to&nbsp;<a href="http://localhost:8888/hello/web/site/about">http://localhost:8888/hello/web/site/about</a>.</p>
+                            <p>The <code class="inline">config</code> subdirectory includes environment configurations for your web and console&nbsp;applications as well as the future database settings.&nbsp;Edit <code class="inline">/config/web.php</code> to add <code class="inline">urlManagement</code> to the current web application. Add the following <code class="inline">urlManager</code> section within the components array:</p>
+                            <div>
+                                <div id="highlighter_522288" class="syntaxhighlighter php nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                                <div class="line number5 index4 alt2">5</div>
+                                                <div class="line number6 index5 alt1">6</div>
+                                                <div class="line number7 index6 alt2">7</div>
+                                                <div class="line number8 index7 alt1">8</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="php string">'components'</code> <code class="php plain">=&gt; [</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="php comments">//...</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;</code><code class="php string">'urlManager'</code> <code class="php plain">=&gt; [</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'showScriptName'</code> <code class="php plain">=&gt; false,</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php string">'enablePrettyUrl'</code> <code class="php plain">=&gt; true</code></div>
+                                                    <div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">],&nbsp;&nbsp;&nbsp;</code></div>
+                                                    <div class="line number7 index6 alt2"><code class="php comments">//...</code></div>
+                                                    <div class="line number8 index7 alt1"><code class="php string">'request'</code> <code class="php plain">=&gt; [</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Then, create an <code class="inline">.htaccess</code> file within <code class="inline">/web</code> where the primary <code class="inline">index.php</code> file exists:</p>
+                            <div>
+                                <div id="highlighter_856767" class="syntaxhighlighter php nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                                <div class="line number5 index4 alt2">5</div>
+                                                <div class="line number6 index5 alt1">6</div>
+                                                <div class="line number7 index6 alt2">7</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="php plain">RewriteEngine on</code></div>
+                                                    <div class="line number2 index1 alt1">&nbsp;</div>
+                                                    <div class="line number3 index2 alt2"><code class="php plain"># If a directory</code><code class="php keyword">or</code> <code class="php plain">a file exists,</code><code class="php keyword">use</code> <code class="php plain">it directly</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="php plain">RewriteCond %{REQUEST_FILENAME} !-f</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="php plain">RewriteCond %{REQUEST_FILENAME} !-d</code></div>
+                                                    <div class="line number6 index5 alt1"><code class="php plain"># Otherwise forward it to index.php</code></div>
+                                                    <div class="line number7 index6 alt2"><code class="php plain">RewriteRule . index.php</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Make sure <code class="inline">mod_rewrite</code> is running locally on MAMP; if not, check out <a href="http://stackoverflow.com/questions/7670561/how-to-get-htaccess-to-work-on-mamp" target="_self">this Stack Overflow guide</a>.</p>
+                            <p>In your browser, visit this URL:&nbsp;<a href="http://localhost:8888/hello/web/site/about">http://localhost:8888/hello/web/site/about</a>. You should see the Yii application About page and clicking on other menu options should bring up pretty URLs.</p>
+                            <h3 class="nolinks">Building the Say Hello World! Action</h3>
+                            <p>Next, we'll add a controller action called <code class="inline">Say</code> to repeat a target message of our choosing. In <code class="inline">/controllers/SiteController.php</code>, add the following action:</p>
+                            <div>
+                                <div id="highlighter_746782" class="syntaxhighlighter plain nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="plain plain">public function actionSay($target = 'World')</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="plain plain">{</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="plain spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain plain">return $this-&gt;render('say', ['target' =&gt; $target]);</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="plain plain">}</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>This will look for a URL parameter called target to echo to the screen. If there is no target parameter, it will say repeat "World". In Yii, actions are defined as a&nbsp;method named with the prefix "action" followed by the action name.&nbsp;In this&nbsp;<code class="inline">SiteController</code> class, we use <code class="inline">public function actionSay</code>. Yii uses the prefix "action" to differentiate action methods from other&nbsp;methods.</p>
+                            <p>The default behavior of the render method will look for a file in&nbsp;<code class="inline">views/ControllerID/ViewName.php</code>. So,&nbsp;in <code class="inline">/views/site/</code>, create a <code class="inline">say.php</code> view file:</p>
+                            <div>
+                                <div id="highlighter_160557" class="syntaxhighlighter php nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                                <div class="line number5 index4 alt2">5</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="php plain">&lt;?php</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="php keyword">use</code> <code class="php plain">yii\helpers\Html;</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="php plain">?&gt;</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="php plain">&lt;h1&gt;Hello &lt;?= Html::encode(</code><code class="php variable">$target</code><code class="php plain">) ?&gt;&lt;/h1&gt;</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="php plain">&lt;p&gt;Welcome to your Yii2 demonstration application.&lt;/p&gt;</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>This is the template view file to repeat static HTML tag <code class="inline">h1</code> with&nbsp;<em>Hello</em> followed by the target variable. <em>Note: We encode the target variable to secure the URL parameter argument from malicious code.</em></p>
+                            <p>If you visit the url,&nbsp;<a href="http://localhost:8888/hello/web/site/say?target=Tuts%20Readers">http://localhost:8888/hello/web/site/say?target=Tuts%20Readers</a>, you should see this:</p>
+                            <figure class="post_image"><img alt="Hello Tuts Readers" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/hello-tuts.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/hello-tuts.jpg" data-was-processed="true"></figure>
+                            <p>That's a very basic example of the Yii2 Model View Controller.&nbsp;You can&nbsp;read through a more thorough description of the Hello World demonstration and Yii2&nbsp;MVC&nbsp;<a href="http://www.yiiframework.com/doc-2.0/guide-start-hello.html" target="_self">here</a>.</p>
+                            <p>Now, let's set up our application with GitHub and deploy it to a production server.&nbsp;<br></p>
+                            <h2 class="nolinks">Setting Up Your Remote Hosting Environment</h2>
+                            <p>The basic Yii application should run fine out of the box with&nbsp;<a href="http://httpd.apache.org/">Apache</a>&nbsp;or an&nbsp;<a href="http://nginx.org/">Nginx</a>, I'll provide instructions for Apache and&nbsp;you can find instructions for <a href="http://www.yiiframework.com/doc-2.0/guide-start-installation.html" target="_self">Nginx here</a>.<br></p>
+                            <h3 class="nolinks">Create a Repository at GitHub</h3>
+                            <p>Once I set up a Yii application template, I <a href="https://github.com/new" target="_self">create a repository at Github</a>:</p>
+                            <figure class="post_image"><img alt="Create a New Repository at Github" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/create-repository.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/create-repository.jpg" data-was-processed="true"></figure>
+                            <p><em><strong>Note:</strong> It's a bit simpler initially to copy and paste&nbsp;the </em><a href="https://github.com/yiisoft/yii2/blob/master/.gitignore" target="_self"><em>Yii2 .gitignore from GitHub</em></a><em> to your local ~/Sites/hello/.gitignore file rather than create the site with it remotely and have to merge it locally, but either approach is fine.</em></p>
+                            <p>I've been using the <a href="https://mac.github.com/" target="_self">Mac OS X GitHub app</a>&nbsp;more frequently but you can also use the command line to initialize the repository. Below,&nbsp;I'm following the instructions for <a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line" target="_self">adding an existing project to GitHub using the command line</a>&nbsp;(replace "youraccount" with your GitHub account name):</p>
+                            <div>
+                                <div id="highlighter_653059" class="syntaxhighlighter plain nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                                <div class="line number5 index4 alt2">5</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="plain plain">cd ~/Sites/hello</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="plain plain">git init</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="plain plain">git commit -m "first commit of hello world for yii2"</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="plain plain">git remote add origin git@github.com:youraccount/hello.git</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="plain plain">git push -u origin master</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <h3 class="nolinks">Configure an Apache Site on Your Server</h3>
+                            <p>If you don't already have a LAMP server or cloud instance,&nbsp;<a href="http://jeffreifman.com/digitalocean" target="_self">follow my generic Ubuntu installation instructions</a>&nbsp;to get started. Once you have your IP address, modify your DNS records to have an A record&nbsp;point to your server.&nbsp;</p>
+                            <div>
+                                <div id="highlighter_5479" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash plain">yourdomain.com A 192.161.234.17</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Then, log in to your server either via IP address or domain name:</p>
+                            <div>
+                                <div id="highlighter_273771" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash functions">ssh</code> <code class="bash plain">root@yourserver.com</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Update the configuration, install Git, enable <code class="inline">mod_rewrite</code> for Apache and <code class="inline">mcrypt</code> for PHP:</p>
+                            <div>
+                                <div id="highlighter_852330" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash functions">sudo</code> <code class="bash plain">apt-get update</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash functions">sudo</code> <code class="bash plain">apt-get upgrade</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="bash functions">sudo</code> <code class="bash plain">a2enmod rewrite</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="bash plain">php5enmod mcrypt</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <h3 class="nolinks">Configure GitHub Access on the Remote Server</h3>
+                            <p>Now, we'll set up a user for pulling code from Github that can be served by Apache. First, install git on your server.</p>
+                            <div>
+                                <div id="highlighter_751689" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash functions">sudo</code> <code class="bash plain">apt-get</code><code class="bash functions">install</code> <code class="bash plain">git</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Then, we'll create a group for www, add www-data and GitHub users to it and grant it&nbsp;ownership of our web directories.<br></p>
+                            <div>
+                                <div id="highlighter_521737" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                                <div class="line number5 index4 alt2">5</div>
+                                                <div class="line number6 index5 alt1">6</div>
+                                                <div class="line number7 index6 alt2">7</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash plain">adduser github</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash plain">addgroup www</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="bash plain">adduser github www</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="bash plain">adduser www-data www</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="bash functions">chown</code> <code class="bash plain">-R :www</code><code class="bash plain">/var/www</code></div>
+                                                    <div class="line number6 index5 alt1"><code class="bash functions">chmod</code> <code class="bash plain">+s -R</code><code class="bash plain">/var/www</code></div>
+                                                    <div class="line number7 index6 alt2"><code class="bash functions">chmod</code> <code class="bash plain">-vR g+w</code><code class="bash plain">/var/www/</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Next, we create a key for the user that we share with GitHub for keeping code in sync:</p>
+                            <div>
+                                <div id="highlighter_705357" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                                <div class="line number4 index3 alt1">4</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash functions">su</code> <code class="bash plain">github</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash functions">ssh</code><code class="bash plain">-keygen -t rsa -C</code><code class="bash string">"yourgithubaccount@youremail.com"</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="bash functions">exit</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="bash functions">cat</code> <code class="bash plain">/home/github/</code><code class="bash plain">.</code><code class="bash functions">ssh</code><code class="bash plain">/id_rsa</code><code class="bash plain">.pub</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>You'll see something like this, which you need to copy and paste to GitHub.com:</p>
+                            <figure class="post_image"><img alt="Your Github Key" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/cat-key.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/cat-key.jpg" data-was-processed="true"></figure>
+                            <p>Visit the Settings page for your GitH soundub repository under keys, and add this key to your repository:</p>
+                            <figure class="post_image"><img alt="" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/add-key-github.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/add-key-github.jpg" data-was-processed="true"></figure>
+                            <p>Once you add it, you'll see it listed here:</p>
+                            <figure class="post_image"><img alt="" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/deploy-key-github.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/deploy-key-github.jpg" data-was-processed="true"></figure>
+                            <p>Finally, you can clone the tree to your production server:</p>
+                            <div>
+                                <div id="highlighter_853473" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash plain">git clone git@github.com:youraccount</code><code class="bash plain">/hello</code><code class="bash plain">.git</code><code class="bash plain">/var/www/hello</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>If you're GitHub access is properly configured, it should look like this (if not, <a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_self">review this</a>):</p>
+                            <figure class="post_image"><img alt="Git Clone" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/git-clone.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/git-clone.jpg" data-was-processed="true"></figure>
+                            <p>As you extend the codebase with this tutorial series and push updates from your local machine, you'll be able to sync them on your remote production server with git pull. This is simpler than pulling down a tarball or syncing code manually - and will become more useful as this tutorial series continues with later modules.</p>
+                            <h3 class="nolinks">Create the Apache Site Configuration</h3>
+                            <p>Create an Apache site configuration file:</p>
+                            <div>
+                                <div id="highlighter_393448" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash plain">nano</code><code class="bash plain">/etc/apache2/sites-available/hello</code><code class="bash plain">.conf</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Customize this configuration for your domain name:</p>
+                            <div>
+                                <div id="highlighter_912164" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">01</div>
+                                                <div class="line number2 index1 alt1">02</div>
+                                                <div class="line number3 index2 alt2">03</div>
+                                                <div class="line number4 index3 alt1">04</div>
+                                                <div class="line number5 index4 alt2">05</div>
+                                                <div class="line number6 index5 alt1">06</div>
+                                                <div class="line number7 index6 alt2">07</div>
+                                                <div class="line number8 index7 alt1">08</div>
+                                                <div class="line number9 index8 alt2">09</div>
+                                                <div class="line number10 index9 alt1">10</div>
+                                                <div class="line number11 index10 alt2">11</div>
+                                                <div class="line number12 index11 alt1">12</div>
+                                                <div class="line number13 index12 alt2">13</div>
+                                                <div class="line number14 index13 alt1">14</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash plain">&lt;VirtualHost *:80&gt;</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash spaces">&nbsp;</code><code class="bash plain">ServerName yourdomain.com</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="bash comments"># Set document root to be "basic/web"</code></div>
+                                                    <div class="line number4 index3 alt1"><code class="bash plain">DocumentRoot</code><code class="bash string">"/var/www/hello/web"</code></div>
+                                                    <div class="line number5 index4 alt2"><code class="bash plain">&lt;Directory</code><code class="bash string">"/var/www/hello/web"</code><code class="bash plain">&gt;</code></div>
+                                                    <div class="line number6 index5 alt1"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash comments"># use mod_rewrite for pretty URL support</code></div>
+                                                    <div class="line number7 index6 alt2"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash plain">RewriteEngine on</code></div>
+                                                    <div class="line number8 index7 alt1"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash comments"># If a directory or a file exists, use the request directly</code></div>
+                                                    <div class="line number9 index8 alt2"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash plain">RewriteCond %{REQUEST_FILENAME} !-f</code></div>
+                                                    <div class="line number10 index9 alt1"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash plain">RewriteCond %{REQUEST_FILENAME} !-d</code></div>
+                                                    <div class="line number11 index10 alt2"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash comments"># Otherwise forward the request to index.php</code></div>
+                                                    <div class="line number12 index11 alt1"><code class="bash spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="bash plain">RewriteRule . index.php</code></div>
+                                                    <div class="line number13 index12 alt2"><code class="bash plain">&lt;</code><code class="bash plain">/Directory</code><code class="bash plain">&gt;</code></div>
+                                                    <div class="line number14 index13 alt1"><code class="bash plain">&lt;</code><code class="bash plain">/VirtualHost</code><code class="bash plain">&gt;</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Enable your site:</p>
+                            <div>
+                                <div id="highlighter_464063" class="syntaxhighlighter bash nolinks">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="gutter">
+                                                <div class="line number1 index0 alt2">1</div>
+                                                <div class="line number2 index1 alt1">2</div>
+                                                <div class="line number3 index2 alt2">3</div>
+                                            </td>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code class="bash plain">a2ensite hello.conf</code></div>
+                                                    <div class="line number2 index1 alt1"><code class="bash plain">a2dissite 000-default.conf</code></div>
+                                                    <div class="line number3 index2 alt2"><code class="bash plain">service apache2 reload</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p>Visit <a href="http://yourdomain.com/site/say?target=World!">http://yourdomain.com/site/say?target=World!</a>&nbsp;and you should&nbsp;see your application running on your domain without the Yii2 debug toolbar at the bottom like this:</p>
+                            <figure class="post_image"><img alt="Production Server Hello World Application" data-src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/helloworld.jpg" class="loaded" src="https://cms-assets.tutsplus.com/uploads/users/317/posts/22440/image/helloworld.jpg" data-was-processed="true"></figure>
+                            <p>Congratulations! We're now ready to explore more sophisticated features in Yii2.&nbsp;If you'd like to know when the next Yii2 tutorial arrives,&nbsp;<a href="https://twitter.com/intent/user?screen_name=tutspluscode" target="_self">follow @tutspluscode</a>&nbsp;or&nbsp;<a href="https://twitter.com/intent/user?screen_name=reifman" target="_self">@reifman</a>&nbsp;on Twitter&nbsp;or&nbsp;<a href="http://tutsplus.com/authors/jeff-reifman" target="_self">check my author page</a>. My author page will include all the articles from this series as soon immediately after they are published.</p>
+                            <p>If you have any questions or corrections on this tutorial, please post them in the comments.<br></p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout__sidebar">
+                <ul>
+                    <li><a href="http://yiiframework.com" target="_self">Yii Framework Website</a></li>
+                    <li><a href="http://code.tutsplus.com/articles/introduction-to-the-yii-framework--cms-20948" target="_self">Introduction to the Yii Framework (Tuts+)</a>&nbsp;</li>
+                    <li><a href="http://jeffreifman.com/yii/tutorials/" target="_self">Other Free and Open Source&nbsp;Yii Programming Examples by the Author</a></li>
+                    <li><a href="https://codecanyon.net/category/php-scripts" target="_self">Useful PHP scripts on Envato Market</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+</div>
 </body>
 </html>
