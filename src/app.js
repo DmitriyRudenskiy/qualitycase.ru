@@ -10,7 +10,7 @@ import router from './http/routers'
 const app = new Koa()
     .use(serve(path.join(__dirname, '/../public')))
     .use(helmet())
-    .use(koaBody())
+    .use(koaBody()
     .use(router.routes())
     .use(router.allowedMethods())
 
