@@ -7,7 +7,7 @@
     "dev": "./node_modules/.bin/supervisor app/index.js",
     "test": "./node_modules/.bin/jest --notify",
     "pretty": "./node_modules/.bin/prettier --tab-width 4 --no-semi --single-quote --trailing-comma=none --end-of-line=lf --write '{src,tests}/**/*.js'",
-    "lint": "./node_modules/.bin/eslint"
+    "lint": "./node_modules/.bin/eslint ./src --color"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
