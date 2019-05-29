@@ -13,5 +13,6 @@
     node src/
     
 # Перед git commit
+    npm run pretty
 
 #test

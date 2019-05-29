@@ -6,7 +6,8 @@
     "start": "node app/",
     "dev": "./node_modules/.bin/supervisor app/index.js",
     "test": "./node_modules/.bin/jest --notify",
-    "pretty": "./node_modules/.bin/prettier --tab-width 4 --no-semi --single-quote --trailing-comma es5 --write '{assets,src,tests}/**/*.js'"
+    "pretty": "./node_modules/.bin/prettier --tab-width 4 --no-semi --single-quote --trailing-comma=none --end-of-line=lf --write '{src,tests}/**/*.js'",
+    "lint": "./node_modules/.bin/eslint"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
@@ -43,11 +44,26 @@
       "browser": true,
       "node": true
     },
+    "rules": {
+      "indent": ["error", 4, {"SwitchCase": 1}],
+      "space-before-function-paren": ["error", {
+        "anonymous": "never",
+        "named": "always",
+        "asyncArrow": "always"
+      }]
+    },
     "plugins": [
       "jest"
     ]
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.1",

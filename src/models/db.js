@@ -15,10 +15,10 @@ const sequelize = new Sequelize(
             freezeTableName: false,
             charset: 'utf8',
             dialectOptions: {
-                collate: 'utf8_general_ci',
+                collate: 'utf8_general_ci'
             },
-            timestamps: true,
-        },
+            timestamps: true
+        }
     }
 )
 

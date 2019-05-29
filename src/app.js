@@ -26,8 +26,8 @@ app.context.render = co.wrap(
         locals: {
             route: function(name, params) {
                 return router.url(name, params)
-            },
-        },
+            }
+        }
     })
 )
 
