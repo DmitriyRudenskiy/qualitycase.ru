@@ -1,6 +1,9 @@
 {
   "name": "qualitycase.ru",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "engines": {
+    "node": "12.3.1"
+  },
   "scripts": {
     "start": "node src/",
     "dev": "./node_modules/.bin/supervisor src/index.js",
