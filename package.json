@@ -2,7 +2,6 @@
   "name": "qualitycase.ru",
   "version": "0.0.2",
   "scripts": {
-    "build": "babel server --out-dir build --presets=es2015 && webpack",
     "start": "node src/",
     "dev": "./node_modules/.bin/supervisor src/index.js",
     "test": "./node_modules/.bin/jest --notify",
