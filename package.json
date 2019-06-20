@@ -9,7 +9,11 @@
     "dev": "HOST=0.0.0.0 PORT=8080 ./node_modules/.bin/supervisor src/index.js",
     "test": "./node_modules/.bin/jest --notify",
     "pretty": "./node_modules/.bin/prettier --tab-width 4 --no-semi --single-quote --trailing-comma=none --end-of-line=lf --write '{src,tests}/**/*.js'",
-    "lint": "./node_modules/.bin/eslint ./src --color"
+    "lint": "./node_modules/.bin/eslint ./src --color",
+    "format": "eslint lib test --fix",
+    "lint2": "eslint lib test",
+    "test2": "eslint lib test && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
