@@ -16,3 +16,18 @@
     npm run pretty
 
 #test
+
+.
+├── package.json
+├── package-lock.json
+└── src
+    ├── db
+    │   ├── migrations
+    │   │   ├── 20190611175237-create-task.js
+    │   │   └── 20190611175246-create-user.js
+    │   ├── models
+    │   │   ├── index.js
+    │   │   ├── task.js
+    │   │   └── user.js
+    │   └── seeders
+    └── index.js
