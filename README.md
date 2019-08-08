@@ -14,9 +14,12 @@
     
 # Перед git commit
     npm run pretty
+    
+    
+# For test
+    https://qualitycase.herokuapp.com/
 
 #test
-
 .
 ├── package.json
 ├── package-lock.json
