@@ -9,6 +9,27 @@
 </head>
 
 <body class="page-body topic-code">
+<script type="text/javascript" src="syntaxhighlighter.js"></script>
+
+<pre class="brush: php">
+<?php
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class UserRole extends Model
+{
+    protected $casts = ['user_role_id' => 'integer'];
+
+    public function orders()
+    {
+        return $this->hasManyThrough(Order::class, User::class);
+    }
+}
+</pre>
+
+
+
 {% include 'menu.twig' %}
 
 <div class="page-content topic-code" style="height: auto;">
