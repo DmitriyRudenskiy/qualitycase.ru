@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/highlighter.css">
+    <script src="js/highlighter.js"></script>
+    <title>Code v2</title>
+    <style>
+    div.task div.block > code[data-m="+highlight"] {
+      border: none;
+      font-size: 16px;
+      background-color: #fafafa;
+      text-shadow: 1px 1px rgba(255, 255, 255, 0.3), -1px -1px rgba(255, 255, 255, 0.3);
+    }
+    @media (max-width: 600px) {
+      div.task div.block > code[data-m="+highlight"] {
+        font-size: 16px;
+      }
+    }
+    .block >  * {
+      border: 1px solid #e1e1e8;
+    }
+    .block >  code[data-m="+highlight"] {
+      background-color: #fbfbfb;
+      margin: 0 0 7px 0;
+      padding: 10px 0 10px 50px;
+      line-height: 1.4;
+      font-size: 16px;
+      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      white-space: pre;
+      display: block;
+      overflow-x: auto;
+      color: #000000;
+      position: relative;
+      -webkit-tab-size: 2;
+      -moz-tab-size: 2;
+      -o-tab-size: 2;
+      tab-size: 2;
+      counter-reset: line-number;
+    }
+    @media (max-width: 600px) {
+      .block >  code[data-m="+highlight"] {
+        padding-left: 23px;
+        font-size: 16px;
+      }
+    }
+    @media (min-width: 900px) {
+      .block >  code[data-m="+highlight"] {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 350px) {
+      .block >  code[data-m="+highlight"] {
+        font-size: 15px;
+        -webkit-tab-size: 1;
+        -moz-tab-size: 1;
+        -o-tab-size: 1;
+        tab-size: 1;
+      }
+    }
+    .block >  code[data-m="+highlight"] .line-number {
+      color: #999999;
+      position: absolute;
+      right: calc(100% - 40px);
+      padding-right: 10px;
+      border-right: 1px solid #e1e1e8;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      counter-increment: line-number;
+      pointer-events: none;
+    }
+    @media (max-width: 600px) {
+      .block >  code[data-m="+highlight"] .line-number {
+        right: calc(100% - 20px);
+        padding-right: 2px;
+      }
+    }
+    .block >  code[data-m="+highlight"] .line-number::after {
+      content: counter(line-number);
+    }
+    .block >  code[data-m="+highlight"] .break {
+      display: none;
+    }
+    @media (max-width: 500px) {
+      .block >  code[data-m="+highlight"] .break.break-gap-of-1 {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 500px) {
+      .block >  code[data-m="+highlight"] .break.break-1-of-1 {
+        display: inline;
+      }
+    }
+    @media (max-width: 700px) {
+      .block >  code[data-m="+highlight"] .break.break-gap-of-2 {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 700px) {
+      .block >  code[data-m="+highlight"] .break.break-1-of-2 {
+        display: inline;
+      }
+    }
+    @media (max-width: 500px) {
+      .block >  code[data-m="+highlight"] .break.break-2-of-2 {
+        display: inline;
+      }
+    }
+    @media (max-width: 800px) {
+      .block >  code[data-m="+highlight"] .break.break-gap-of-3 {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 500px) {
+      .block >  code[data-m="+highlight"] .break.break-1-of-3 {
+        display: inline;
+      }
+    }
+    @media (max-width: 800px) {
+      .block >  code[data-m="+highlight"] .break.break-2-of-3 {
+        display: inline;
+      }
+    }
+    @media (max-width: 500px) {
+      .block >  code[data-m="+highlight"] .break.break-3-of-3 {
+        display: inline;
+      }
+    }
+    @media (max-width: 1000px) {
+      .block >  code[data-m="+highlight"] .break.break-gap-of-4 {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 750px) {
+      .block >  code[data-m="+highlight"] .break.break-1-of-4 {
+        display: inline;
+      }
+    }
+    @media (max-width: 500px) {
+      .block >  code[data-m="+highlight"] .break.break-2-of-4 {
+        display: inline;
+      }
+    }
+    @media (max-width: 1000px) {
+      .block >  code[data-m="+highlight"] .break.break-3-of-4 {
+        display: inline;
+      }
+    }
+    @media (max-width: 650px) {
+      .block >  code[data-m="+highlight"] .break.break-4-of-4 {
+        display: inline;
+      }
+    }
+    @media (max-width: 1350px) {
+      .block >  code[data-m="+highlight"] .break.break-gap-of-5 {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 750px) {
+      .block >  code[data-m="+highlight"] .break.break-1-of-5 {
+        display: inline;
+      }
+    }
+    @media (max-width: 1350px) {
+      .block >  code[data-m="+highlight"] .break.break-2-of-5 {
+        display: inline;
+      }
+    }
+    @media (max-width: 1000px) {
+      .block >  code[data-m="+highlight"] .break.break-3-of-5 {
+        display: inline;
+      }
+    }
+    @media (max-width: 1000px) {
+      .block >  code[data-m="+highlight"] .break.break-4-of-5 {
+        display: inline;
+      }
+    }
+    @media (max-width: 500px) {
+      .block >  code[data-m="+highlight"] .break.break-5-of-5 {
+        display: inline;
+      }
+    }
+</style>
+</head>
+<body>
+<div class="block">
+	<code data-m="+highlight" data-lang="html">&lt;?php
+	...
+	// Если форма регистрации отправлена...
+	if (!empty($_POST['login']) and !empty($_POST['password'])) {
+
+		// Пишем логин и пароль из формы в переменные для удобства работы:
+		$login = $_POST['login'];
+		$password = $_POST['password'];
+
+		// Пробуем получить юзера с таким логином:
+		$query = "SELECT * FROM users WHERE login='$login'";
+		$user = mysqli_fetch_assoc(mysqli_query($link, $query));
+
+		// Если юзера с таким логином нет:
+		if (empty($user)) {
+			// Формируем и отсылаем SQL запрос:
+			$query = "INSERT INTO users SET login='$login', password='$password'";
+			mysqli_query($link, $query);
+
+			// Пишем в сессию пометку об авторизации:
+			$_SESSION['auth'] = true;
+
+			// Получаем id вставленной записи и пишем его в сессию
+			$id = mysqli_insert_id($link);
+			$_SESSION['id'] = $id;
+		} else {
+			// Логин занят, выведем сообщение об этом
+		}
+	}
+?&gt;
+&lt;form action="" method="POST"&gt;
+	&lt;input name="login"&gt;
+	&lt;input name="password" type="password"&gt;
+	&lt;input type="submit" value="Отправить"&gt;
+&lt;/form&gt;</code>
+</div>
+
+</body>
+</html>
