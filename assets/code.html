@@ -243,16 +243,26 @@
 
 	abstract class Pet
 	{
-
+        public function getHabitat()
+        {
+            return 'house';
+        }
 	}
 
 	abstract FarmAnimals
 	{
-
+        public function getHabitat()
+        {
+            return 'Farm';
+        }
 	}
 
     abstract class WildAnimal
     {
+            public function getHabitat()
+            {
+                return 'wood';
+            }
     }
 
 
