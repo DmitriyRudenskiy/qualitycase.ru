@@ -34,3 +34,8 @@
     │   │   └── user.js
     │   └── seeders
     └── index.js
+
+
+# For deploy
+git tag 1.12.34-release 
+git push origin master --tags

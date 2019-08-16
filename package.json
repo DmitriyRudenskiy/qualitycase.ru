@@ -18,7 +18,9 @@
     "format": "eslint lib test --fix",
     "lint2": "eslint lib test",
     "test2": "eslint lib test && nyc ava",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "cover": "jest --coverage",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
