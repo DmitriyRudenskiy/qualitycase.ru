@@ -6,7 +6,10 @@ before_deploy:
 - export APP_CHANGELOG=$(cat app/src/main/play/release-notes/en-US/default.txt)
 
 deploy:
-- provider: script
+  provider: heroku
+  app: "qualitycase"
+  api_key:
+    secure: ""
   skip_cleanup: true
   script: $TRAVIS_BUILD_DIR/make deploy production $TRAVIS_TAG
   on:
