@@ -1,7 +1,5 @@
 #!/bin/bash
 #
-# Add to cron
-# * * * * * root if [ $(ps aux | grep 'qualitycase.ru/auto_deploy.sh' | grep -v grep | wc -l | tr -s "\n") -lt 1 ]; then /var/www/qualitycase.ru/auto_deploy.sh > /dev/null 2>&1; fi
 
 # Check directory
 SCRIPT_PATH=$(dirname ${BASH_SOURCE[0]})
