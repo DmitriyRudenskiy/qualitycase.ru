@@ -1,0 +1,54 @@
+{% set title = 'php урок 1' %}
+
+{% extends "../layouts/app.twig" %}
+
+{% block content %}
+    <h1 class="mt-4">{{ title }}. Начало изучения Php</h1>
+
+    <pre class="brush: php">
+php
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class UserRole extends Model
+{
+    protected $casts = ['user_role_id' => 'integer'];
+
+    public function orders()
+    {
+        return $this->hasManyThrough(Order::class, User::class);
+    }
+}
+</pre>
+
+    <p>Прежде чем мы поговорим о синтаксисе PHP, давайте сначала определим, что имеется ввиду под словом
+        синтаксис.</p>
+    <p>Синтаксис — правила, которые необходимо соблюдать, чтобы писать правильно структурированный
+    код.</p>
+    <p>Синтаксис PHP и его семантика похожи на большинство других языков программирования (C, Java, Perl). С
+    той лишь разницей, что код PHP встраивается в html разметку страницы. Весь код PHP должны содержаться в
+    следующих тегах:</p>
+    <p>&lt;?php</p><p>?&gt;</p>
+
+    <p>Как вы можете заметить, в приведенном выше примере не было точки с
+    запятой после строки кода PHP. Точка с запятой означает конец операции в PHP и никогда не стоит о ней забывать.
+    Например, если бы мы повторили нашу команду вывода надписи «Hello World!» несколько раз, то мы должны поставить
+    точку с запятой в конце каждой строки.</p>
+
+    <p>Команда include принимает имя файла и просто вставляет его
+    содержимое в сценарий, который этот include вызвал.</p>
+
+    <p>Include весьма полезен, если вы хотите включить тот же PHP или HTML текст или сегмент сразу в несколько страниц сайта.</p>
+
+    <p>Для вывода строки, как мы делали в предыдущих уроках, используется echo. С ее помощью можно выводить текст в кавычках, значения переменных.</p><p>&lt;?php</p>
+    <p>echo
+        "I love PHP!";</p><p></p><p>Задание:</p><p>Создайте 4 файла, соблюдая структуру папок</p><p>src/index.php</p><p>
+    src/Models/User.php</p><p>src/Controllers/HomeController.php</p><p>src/views/home/index.php</p><p></p><p>
+    src/Models/User.php
+    выводит строку 'Это модель'</p><p>src/Controllers/HomeController.php&nbsp; 'Это контроллер'</p><p>
+    src/views/home/index.php
+    'Это первый шаблон'</p><p></p><p>Подключите в src/index.php</p><p>файлы в строго указанном порядке:</p><p>
+    src/Models/User.php</p><p>src/Controllers/HomeController.php</p><p>src/views/home/index.php</p><p></p><p>!Выжно
+    каждое сообщение должно быть с новой строки.</p><p>Запустите тесты</p>
+{% endblock %}
