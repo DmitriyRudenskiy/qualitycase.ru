@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Test chat</title>
+  </head>
+  <body>
+    <h1>Test for Rudenskiy Dmitriy</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://content.astro7.ru/js/chat-bot-2.js" type="text/javascript" charset="UTF-8"></script>
+      <script type="text/javascript" charset="UTF-8">
+
+      //const partnerId = '5c6a617a0868a';
+      const partnerId = '5b961efb765e3';
+
+
+      function addAction(isShow)
+      {
+          const url = '//affiliate.teleastro.ru/scripts/7oinyw0?partner='+ partnerId +'&pb=ecfda889&chan=code2';
+          /*
+
+          const xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            xhr.send(null);
+            xhr.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    console.log(this.responseText);
+                }
+            }
+            */
+          const newimg = document.createElement("img");
+          newimg.setAttribute("src", url);
+          document.querySelector('.js-bot-chat').appendChild(newimg);
+
+      }
+
+      function watch() {
+        if (document.querySelector('.js-bot-chat') === null) {
+            return null;
+        }
+            // обрабатываем нажатие на чат
+            document.querySelector('.js-bot-chat').addEventListener("click", function() {
+               console.log("Chat click");
+            });
+
+            // обрабатываем загрузку чата (показ)
+            console.log("Chat load");
+            addAction(true);
+      }
+
+
+        (function (window, document) {
+          window.A7 = window.A7 || {};
+          window.A7.chatTexts = {
+            'header': 'Экстрасенс. Бесплатная помощь',
+            'messages': [
+              'Здравствуйте! Какой у вас вопрос? Напишите его здесь и я помогу вам. Это бесплатная услуга для посетителей нашего сайта.',
+              'Спасибо за вопрос. Я отвечу на него по телефону во время бесплатной консультации. Пройдите простую регистрацию, чтобы я смогла связаться с вами.'
+            ]
+          };
+          window.A7.timeDelayHead = 2;
+          window.A7.timeDelayBody = 4;
+          window.A7.load = function() {
+            var xhr = new XMLHttpRequest(),
+              that = this;
+            xhr.open('GET', 'https://content.astro7.ru/chat/5b961efb765e3/expert?chan=&pb=7315322f&text[header]=' + encodeURIComponent(window.A7.chatTexts.header) + '&text[messages][]=' + encodeURIComponent(window.A7.chatTexts.messages[0]) + '&text[messages][]=' + encodeURIComponent(window.A7.chatTexts.messages[1]));
+            xhr.send(null);
+            xhr.onreadystatechange = function() {
+              if (this.readyState != 4) return;
+              if (this.status != 200) return;
+              var chatEl = document.createElement("div");
+              chatEl.innerHTML += this.responseText;
+              document.getElementsByTagName("body")[0].appendChild(chatEl);
+
+              watch();
+            }
+          };
+          window.A7.load();
+        })(window, document);
+      </script>
+  </body>
+</html>

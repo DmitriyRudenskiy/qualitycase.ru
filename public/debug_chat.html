@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Test chat</title>
+  </head>
+  <body>
+    <h1>Test for Rudenskiy Dmitriy</h1>
+
+    <script type="text/javascript">
+    function TrackerChat() {
+
+        var element = document.querySelector('.js-bot-textarea');
+
+        /**
+         * Обрабатываем нажатие на чат
+         */
+        function clickFunction(e) {
+
+            console.log('clicked 2');
+            element.removeEventListener('keyup', clickFunction);
+
+            var partner = '5b961efb765e3';
+            var pb = '7315322';
+
+            var img = document.createElement("img");
+            img.src = 'https://astro7.ru/?r=landing/default/index&landing=marry_mail&partner=' + partner+ '&pb=' +pb;
+            img.width = 1;
+            img.height = 1;
+            document.body.appendChild(img);
+
+            // https://affiliate.teleastro.ru/scripts/7oinyw0?partner=5c6a617a0868a&amp;pb=57aefff4
+
+            /*
+            var papScriptHeader = document.createElement('script');
+            papScriptHeader.setAttribute('src', '//affiliate.teleastro.ru/scripts/trackjs.js');
+            papScriptHeader.setAttribute('id', 'pap_x2s6df8d');
+            papScriptHeader.setAttribute('type', 'text/javascript');
+            document.getElementsByTagName('body')[0].appendChild(papScriptHeader);
+            papScriptHeader.onload = function () {
+                console.log('clicked 3');
+
+                PostAffTracker.setAccountId('5c6a617a0868a');
+                try {
+                    PostAffTracker.track();
+                } catch (err) {
+                }
+            };
+            */
+        }
+
+        return {
+            watch: function watch() {
+                console.log('clicked 1 ');
+
+                if (element === null) {
+                    return null;
+                }
+
+                element.addEventListener('keyup', clickFunction);
+            }
+        };
+    }
+    </script>
+
+  <script src="https://content.astro7.ru/js/chat-bot-2.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    (function (window, document) {
+      window.A7 = window.A7 || {};
+      window.A7.chatTexts = {
+        'header': 'Экстрасенс. Бесплатная помощь',
+        'messages': [
+          'Здравствуйте! Какой у вас вопрос? Напишите его здесь и я помогу вам. Это бесплатная услуга для посетителей нашего сайта.',
+          'Спасибо за вопрос. Я отвечу на него по телефону во время бесплатной консультации. Пройдите простую регистрацию, чтобы я смогла связаться с вами.'
+        ]
+      };
+      window.A7.timeDelayHead = 2;
+      window.A7.timeDelayBody = 4;
+      window.A7.load = function() {
+        var xhr = new XMLHttpRequest(),
+          that = this;
+        xhr.open('GET', '//content.astro7.ru/chat/5b961efb765e3/expert?chan=&pb=7315322');
+        xhr.send(null);
+        xhr.onreadystatechange = function() {
+          if (this.readyState != 4) return;
+          if (this.status != 200) return;
+          var chatEl = document.createElement("div");
+          chatEl.innerHTML += this.responseText;
+          document.getElementsByTagName("body")[0].appendChild(chatEl);
+          TrackerChat().watch();
+        }
+      };
+      window.A7.load();
+    })(window, document);
+  </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://astro7.ru/styles/sod.css">
+  <style>
+    .js-a7-regform {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="js-a7-regform">content v2</div>
+
+
+<script src="https://astro7.ru/fileadmin/templates/js/jquery-1.12.0.js"></script>
+<script src="https://astro7.ru/fileadmin/templates/js/sod.jquery.min.js"></script>
+<script src="https://astro7.ru/fileadmin/templates/js/reg-v2.js"></script>
+<script src="https://astro7.ru/fileadmin/templates/js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript">
+    (function(document){
+        var partner = 'mgid',
+        pb = '7315322f',
+        script = document.createElement('script');
+        script.src = 'https://content.astro7.ru/js/form-registration.js?v=' + Date.now();
+        script.onload = function () {
+            window.A7.landRegistration.start('https://content.astro7.ru/form/'+partner+'/registration?chan=code1&pb=' + pb);
+        };
+        document.body.appendChild(script);
+    }(document));
+</script>
+</body>
+</html>
