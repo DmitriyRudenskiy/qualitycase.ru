@@ -95,7 +95,9 @@
 
 
       <div class="col-lg-8">
-          {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
+
+        <div class="addthis_inline_share_toolbox"></div>
       </div>
 
       <!-- Sidebar Widgets Column -->
@@ -168,5 +170,17 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+    <script type="text/javascript">
+      /*
+        var addthis_share = {
+            url: "THE URL",
+            title: "THE TITLE",
+            description: "THE DESCRIPTION",
+            media: "THE IMAGE"
+        }
+        */
+    </script>
   </body>
 </html>
