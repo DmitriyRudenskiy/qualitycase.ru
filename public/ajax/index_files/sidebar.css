@@ -1,0 +1,81 @@
+.sidebar   {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    background: #232a32;
+    color: #c7c7c7;
+}
+
+.sidebar a {
+    color: #c7c7c7;
+    font-size: 1rem;
+}
+
+.sidebar i {
+    position: relative;
+    top: 6px;
+    padding: 0 5px;
+}
+
+.login-panel {
+    box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.2);
+    background-color: #29323b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: .8rem;
+    padding: 0;
+}
+.login-panel p {
+    font-size: .8rem;
+    padding: 15px;
+}
+.login-panel a {
+    display: block;
+    width: 100%;
+    font-size: .8rem;
+    padding: 5px 15px;
+}
+
+.login-panel a:hover {
+    background-color: #373E46;
+}
+
+.sidebar-icon {
+    width: 16px;
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+}
+li.menu-item {
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+}
+
+ul.sidebar-nav {
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-header a {
+    color: #c7c7c7;
+}
+
+.side-nav .place a {
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav li, .side-nav li>a {
+    line-height: 24px;
+}
+
+.side-nav a {
+    color: #c7c7c7;
+}
+
+.a-icon-login i {
+    position: relative;
+    top: 4px;
+}

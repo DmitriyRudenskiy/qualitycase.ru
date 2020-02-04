@@ -1,0 +1,31 @@
+МОНИТОРИМ SQL-ЗАПРОСЫ В РЕАЛЬНОМ ВРЕМЕНИ
+
+для просмотра абсолютно всех SQL-запросов к базе данных 
+mysql> SHOW VARIABLES LIKE "general_log%";
+
++------------------+----------------------------+
+| Variable_name | Value |
++------------------+----------------------------+
+| general_log | OFF |
+| general_log_file | /var/run/mysqld/mysqld.log |
++------------------+----------------------------+
+
+mysql> SET GLOBAL general_log = 'ON';
+
+
+Теперь мы готовы отслеживать запросы в реальном времени. Откройте новый терминал и запустите эту команду:
+tail -f /var/log/mysql/mysql.log
+
+Второй способ
+    #
+    # * Logging and Replication
+    #
+    # Both location gets rotated by the cronjob.
+    # Be aware that this log type is a performance killer.
+
+    log = /var/log/mysql/mysql.log
+
+Здесь нужно просто раскомментировать переменную “log”. Перезапустим MySQL:
+sudo /etc/init.d/mysql restart
+
+Такой способ не подходит для теста на боевом сервер

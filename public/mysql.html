@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://emmitfenn.com/assets/meta/metaapple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://emmitfenn.com/assets/meta/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://emmitfenn.com/assets/meta/favicon-16x16.png">
+	<link rel="manifest" href="https://emmitfenn.com/assets/meta/manifest.json">
+	<link rel="mask-icon" href="https://emmitfenn.com/assets/meta/safari-pinned-tab.svg" color="#5bbad5">
+
+	<title>Emmit Fenn</title>
+
+	<meta name="description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+
+	<meta name="twitter:title" content="Emmit Fenn">
+	<meta name="twitter:site" content="https://emmitfenn.com/">
+	<meta name="twitter:creator" content="@EmmitFennMusic">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+	<meta name="twitter:image" content="https://emmitfenn.com/assets/meta/cover.jpg">
+
+	<meta property="og:title" content="Emmit Fenn">
+	<meta property="og:site_name" content="Emmit Fenn">
+	<meta property="og:url" content="https://emmitfenn.com/">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="Music by Emmit Fenn. Visuals by Active Theory. In Partnership with Th3rd Brain.">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image" content="https://emmitfenn.com/assets/meta/cover.jpg">
+
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+	<script></script>
+</head>
+<body>
+<div class="program">
+        <div class="backpack"></div>
+        <h2>Программа курса</h2>
+        <p>Насыщенная программа с&nbsp;короткими видео-уроками и&nbsp;большим количеством практики.<br>
+Изучаем SQL на&nbsp;примере MySQL&nbsp;— одной из&nbsp;самых популярных баз данных.</p>
+
+        <ol class="items">
+                <li><strong>Простые SQL запросы</strong> <span class="dash">—</span> <span class="details">6 уроков, 26 задач</span></li>
+                <li><strong>Добавление, изменение, удаление</strong> <span class="dash">—</span> <span class="details">3 урока, 20 задач</span></li>
+                <li><strong>Создание таблиц</strong> <span class="dash">—</span> <span class="details">7 уроков, 37 задач</span></li>
+                <li><strong>Индексы</strong> <span class="dash">—</span> <span class="details">4 урока, 20 задач</span></li>
+                <li><strong>Изменение таблиц</strong> <span class="dash">—</span> <span class="details">3 урока, 13 задач</span></li>
+                <li><strong>Поиск текста</strong> <span class="dash">—</span> <span class="details">2 урока, 12 задач</span></li>
+                <li><strong>Вспомогательные функции</strong> <span class="dash">—</span> <span class="details">3 урока, 23 задачи</span></li>
+                <li><strong>Группировка данных</strong> <span class="dash">—</span> <span class="details">3 урока, 17 задач</span></li>
+                <li><strong>Многотабличные запросы</strong> <span class="dash">—</span> <span class="details">13 уроков, 75 задач</span></li>
+                <li><strong>Вложенные запросы</strong> <span class="dash">—</span> <span class="details">6 уроков, 17 задач</span></li>
+        </ol>
+    </div>
+
+    <div>
+    ПРОСТЫЕ SQL ЗАПРОСЫ
+    Запросы написаны без экранирующих кавычек, так как у MySQL, MS SQL и PostGree они разные.
+
+    SQL ЗАПРОС: ПОЛУЧЕНИЕ УКАЗАННЫХ (НУЖНЫХ) ПОЛЕЙ ИЗ ТАБЛИЦЫ
+    SELECT
+     id,
+     country_title,
+     count_people
+    FROM table_name
+    Получаем список записей: ВСЕ страны и их население. Название нужных полей указываются через запятую.
+
+    SELECT *
+    FROM table_name
+    * обозначает все поля. То есть, будут показы АБСОЛЮТНО ВСЕ поля данных.
+
+    SQL ЗАПРОС: ВЫВОД ЗАПИСЕЙ ИЗ ТАБЛИЦЫ ИСКЛЮЧАЯ ДУБЛИКАТЫ
+    SELECT DISTINCT
+     country_title
+    FROM table_name
+    Получаем список записей: страны, где находятся наши пользователи. Пользователей может быть много из одной страны. В этом случае это ваш запрос.
+
+    SQL ЗАПРОС: ВЫВОД ЗАПИСЕЙ ИЗ ТАБЛИЦЫ ПО ЗАДАННОМУ УСЛОВИЮ
+    SELECT
+     id,
+     country_title,
+     city_title
+    FROM table_name
+    WHERE count_people>100000000
+    Получаем список записей: страны, где количество людей больше 100 000 000.
+    SQL ЗАПРОС: ВЫВОД ЗАПИСЕЙ ИЗ ТАБЛИЦЫ С УПОРЯДОЧИВАНИЕМ
+    SELECT
+     id,
+     city_title
+    FROM table_name
+    ORDER BY city_title
+    Получаем список записей: города в алфавитном порядке. В начале А, в конце Я.
+
+    SELECT
+     id,
+     city_title
+    FROM table_name
+    ORDER BY city_title DESC
+    Получаем список записей: города в обратном (DESC) порядке. В начале Я, в конце А.
+
+    SQL ЗАПРОС: ПОДСЧЕТ КОЛИЧЕСТВА ЗАПИСЕЙ
+    SELECT
+     COUNT(*)
+    FROM table_name
+    Получаем число (количество) записей в таблице. В данном случае НЕТ списка записей.
+
+    SQL ЗАПРОС: ВЫВОД НУЖНОГО ДИАПАЗОНА ЗАПИСЕЙ
+    SELECT *
+    FROM table_name
+    LIMIT 2, 3
+    Получаем 2 (вторую) и 3 (третью) запись из таблицы. Запрос полезен при создании навигации на WEB страницах.
+</div>
+
+<div>
+INSERT добавляет записи в существующую таблицу. Существует три варианта синтаксиса INSERT (в квадратные скобки взяты те параметры/инструкции/разделы, которые являются необязательными):
+REPLACE отличается от INSERT только тем, что если в таблице имеется запись с таким же значением в индексированном поле (unique index), как у новой записи, то старая запись удаляется перед добавлением новой.
+DELETE UPDATE заменяет значения существующих полей таблицы на новые. Выражение SET указывает какие поля изменять и значения, которые нужно присвоить этим полям. Выражение
+WHERE (если есть) - какие записи должны быть изменены. Если WHERE нет, будут изменены все записи. DELETE удаляет из таблицы записи, которые удовлетворяют условию WHERE, и возвращает количество удаленных записей.
+</div>
+</body>
+</html>

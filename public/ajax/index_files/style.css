@@ -1,0 +1,316 @@
+body {
+    background: #fff;
+    color: #373e46;
+}
+html, body {
+    font-size:16px;
+}
+.row .col {
+    padding: 0;
+}
+.row {
+    margin-bottom: 0;
+}
+
+.grey-bg {
+    background: #efefef;
+    min-height: 100vh;
+}
+
+.divider {
+    margin: 2rem 0;
+}
+
+.empty {
+    margin-top: 100px;
+}
+
+.place {
+    margin: 0.75rem;
+}
+.place-right {
+    margin-right: 2rem;
+}
+.main-header {
+    background: #ffe355;
+}
+
+.course-card {
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 3px;
+    position: relative;
+    padding: 15px;
+}
+.course-card:hover {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3),
+                0 1px 5px 0 rgba(0,0,0,0.3),
+                0 3px 1px -2px rgba(0,0,0,0.3);
+}
+.course-card a {
+    display: block;
+    padding: 15px;
+    color: #383f47;
+}
+
+.course-card h3 {
+    color: #383f47;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.course-card p {
+    line-height: 150%;
+}
+.course-card .card-image {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-image {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.courses-min-img {
+    width: 50px;
+}
+
+.platform-menu__site-logo {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.sidebar .platform-menu__site-logo a {
+    color: #fff;
+}
+
+.hero {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+
+.under-header {
+    margin: 3.5rem 0 0 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.4rem;
+}
+
+.red-border {
+    border-left: 20px solid #6dddfc;
+    padding: 15px 0 15px 30px;
+    margin-bottom: 20px;
+    transition: all ease 1s;
+}
+.red-border:hover {
+    background: #6dddfc;
+}
+
+.red-border a {
+    color: #212121;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.red-border a:hover {
+    text-decoration: underline;
+}
+
+
+.red-border ul li i {
+    position: relative;
+    top: 6px;
+}
+
+.course-time i {
+    position: relative;
+    top: 6px;
+    padding-right: 8px;
+}
+
+.course-num {
+    font-size: 9.5rem;
+    line-height: 9rem;
+    color: #dbdbdb;
+    margin: 0 0 20px 0;
+}
+.course-name {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.uname {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.utext h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.back-arrow {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.back-arrow i {
+    vertical-align: bottom;
+}
+
+.back-arrow-block {
+    padding: 20px 0;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.start-panel {
+    border: 1px solid #9e9e9e;
+
+    margin-top: 30px;
+}
+
+.start-panel .row {
+    margin: 10px 20px 10px 20px;
+}
+
+.start-panel #intosystem {
+    margin: 20px auto;
+    display: block;
+    background: #ffe355;
+    color: #000;
+}
+
+.start-panel input[type=email]:not(.browser-default):focus:not([readonly])+label {
+    color: #000;
+}
+.start-panel input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+.start-panel input[type=password]:not(.browser-default):focus:not([readonly])+label {
+    color: #000;
+}
+.start-panel input[type=password]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+.next-unit-button, .prev-unit-button {
+    font-size: 2.5rem;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ffe155;;
+    border-radius: 50%;
+    float: left;
+    padding: 5px;
+    color: #ffe155;
+    position: relative;
+    cursor: pointer;
+}
+
+.next-unit-button:hover, .prev-unit-button:hover {
+   color: #fff;
+    background: #ffe155;
+}
+
+.next-unit-button::after {
+    content: "next";
+    position: absolute;
+    bottom: -18px;
+    left: 15px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #373e46;
+}
+.prev-unit-button::after {
+    content: "prev";
+    position: absolute;
+    bottom: -18px;
+    left: 15px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #373e46;
+}
+
+ul.my-list {
+    padding-left: 40px;
+}
+
+ul.my-list li {
+    margin-bottom: .8rem;
+}
+
+ul.my-list li {
+    list-style-type: disc;
+}
+
+#unit-out {
+    padding-bottom: 100px;
+}
+.small-header {
+    background: #232a32;
+    color: #c7c7c7;
+}
+
+.mobile-menu {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.side-nav {
+    background: #232a32;
+    color: #c7c7c7;
+}
+
+.side-nav li a {
+    color: #c7c7c7;
+}
+
+.side-nav li a i {
+    color: #c7c7c7;
+}
+
+.button-collapse i {
+    color: #fff;
+    padding: 10px;
+}
+
+.side-nav li>a>i, .side-nav li>a>i.material-icons {
+    color: #fff;
+}
+
+.min-logo {
+    color: #fff;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.contact-name {
+    font-size: 1.5rem;
+}
+
+.main-footer {
+    padding-top: 100px;
+}
+
+.sidebar-header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0 10px;
+    margin: 10px 0 20px 0;
+}
+
+.download-line {
+    margin: 30px 0 80px 0;
+}
