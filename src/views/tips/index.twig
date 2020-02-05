@@ -6,19 +6,31 @@
     <h1 class="mt-4">Подсказки</h1>
 
     <h2>Удаляем из Git папку .idea</h2>
+
+    <h3>Запись существует в файле .gitignore</h3>
     <pre>
-// Запись существует в .gitignore
+// Удалим все проиндексированные файлы:
 git rm .idea/ -r --cached
+
+// Запустим индексацию заново:
 git add -u .idea/
+
+        // Добавляем коммит и пушим:
 git commit -m "Removed the .idea folder"
 git push
     </pre>
 
+    <h3>С добавлением записи .idea в файл .gitignore</h3>
     <pre>
-// С добавлением записи .idea в файл .gitignore
+// Добавим файл .gitignore в корень проекта:
 echo '.idea' >> .gitignore
+
+        // Удалим все проиндексированные файлы:
 git rm -r --cached .idea
+
 git add .gitignore
+
+        // Добавляем коммит и пушим:
 git commit -m 'Added .idea to ignored entries'
 git push
     </pre>
