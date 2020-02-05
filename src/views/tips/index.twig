@@ -4,4 +4,22 @@
 
 {% block content %}
     <h1 class="mt-4">Подсказки</h1>
+
+    <h2>Удаляем из Git папку .idea</h2>
+    <pre>
+// Запись существует в .gitignore
+git rm .idea/ -r --cached
+git add -u .idea/
+git commit -m "Removed the .idea folder"
+git push
+    </pre>
+
+    <pre>
+// С добавлением записи .idea в файл .gitignore
+echo '.idea' >> .gitignore
+git rm -r --cached .idea
+git add .gitignore
+git commit -m 'Added .idea to ignored entries'
+git push
+    </pre>
 {% endblock %}
