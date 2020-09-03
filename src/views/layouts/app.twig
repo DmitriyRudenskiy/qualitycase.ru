@@ -19,28 +19,7 @@
 
 
       <div class="col-lg-8">
-        <pre><code class="php">&lt;?php
-
-require 'vendor/autoload.php';
-
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-
-//Создаем экземпляр класса электронной таблицы
-$spreadsheet = new Spreadsheet();
-//Получаем текущий активный лист
-$sheet = $spreadsheet-&gt;getActiveSheet();
-// Записываем в ячейку A1 данные
-$sheet-&gt;setCellValue('A1', 'Hello my Friend!');
-
-$writer = new Xlsx($spreadsheet);
-//Сохраняем файл в текущей папке, в которой выполняется скрипт.
-//Чтобы указать другую папку для сохранения.
-//Прописываем полный путь до папки и указываем имя файла
-$writer-&gt;save('hello.xlsx');
-</code></pre>
         {% block content %}{% endblock %}
-
         <div class="addthis_inline_share_toolbox"></div>
       </div>
 
