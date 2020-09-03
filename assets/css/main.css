@@ -1,0 +1,117 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    border-top: 10px #4cc1be solid;
+    font: normal 16px/26px "Roboto", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    padding: 0 15px;
+
+}
+
+.container {
+    width: 100%;
+    display: block;
+    background: #fefefe;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 680px) {
+    .container {
+        margin: 45px auto;
+    }
+}
+
+@media (min-width: 1340px) {
+    .container {
+        max-width: 1290px !important;
+    }
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        display: block;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0 0 0.5em;
+        line-height: 1.4;
+    }
+
+    nav a {
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        border-radius: 0px;
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 25px;
+        padding-left: 0px;
+        white-space: nowrap;
+        color: #333;
+    }
+
+    .__logo, .__logo a {
+        display: inline-block;
+        color: #333;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: capitalize;
+        font-size: 25px;
+    }
+
+    p {
+        display: block;
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+

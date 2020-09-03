@@ -1,19 +1,35 @@
-const gulp = require('gulp');
-const $ = require('gulp-load-plugins')();
-const paths = {
-    dest: './public',
-    src: './assets'
-};
+const gulp = require('gulp')
+const babel = require('gulp-babel')
+const concat = require('gulp-concat')
+const minify = require('gulp-minify')
+const cleanCSS = require('gulp-clean-css')
+const cssmin = require('gulp-cssmin');
 
-console.log(paths.dest + '/css');
+function javascript () {
+    // place code for your default task here
+    return gulp.src([
+        'assets/js/highlight.js',
+        'assets/js/main.js'
+    ])
+        .pipe(babel({
+            presets: ['@babel/preset-env']
+        }))
+        .pipe(concat('build.js'))
+        .pipe(minify())
+        .pipe(gulp.dest('public/js'))
+}
 
-gulp.task('css', function () {
-    return gulp.src(paths.src + '/css/*.css')
-        .pipe($.csslint())
-        //.pipe($.csslint.formatter())
-        .pipe($.stripCssComments())
-        //.pipe($.autoprefixer())
-        .pipe($.concat('style.css'))
-        .pipe($.cssnano())
-        .pipe(gulp.dest(paths.dest + '/css'));
-});
+function css () {
+    return gulp.src([
+        'assets/css/font.css',
+        'assets/css/bootstrap.css',
+        'assets/css/highlight.css',
+        'assets/css/main.css'
+    ])
+        .pipe(concat('build.css'))
+        .pipe(cleanCSS())
+        .pipe(cssmin())
+        .pipe(gulp.dest('public/css'))
+}
+
+exports.default = gulp.series(javascript, css)

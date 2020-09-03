@@ -43,3 +43,5 @@ git push origin master --tags
 # For edit cron
 EDITOR=nano crontab -e
 * * * * * if [ $(ps aux | grep 'qualitycase.ru/auto_deploy.sh' | grep -v grep | wc -l | tr -s "\n") -lt 1 ]; then /var/www/qualitycase.ru/auto_deploy.sh > /dev/null 2>&1; fi
+
+npm install -g bower

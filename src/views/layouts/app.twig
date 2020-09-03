@@ -6,142 +6,39 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
-
     <title>{{ title }} | Quality Case</title>
-
     <link rel="canonical" href="https://qualitycase.ru/">
-
-    <link rel="stylesheet" href="/css/highlighter.css">
-    <script src="/js/highlighter.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <style>
-    html {
-      font-size: 14px;
-    }
-
-    body {
-      border-top: 10px #4cc1be solid;
-      font: normal 16px/26px "Roboto", Arial, sans-serif;
-      text-rendering: optimizeLegibility;
-    }
-        @media (min-width: 768px) {
-          html {
-            font-size: 16px;
-          }
-        }
-
-
-        .card-deck .card {
-          min-width: 220px;
-        }
-
-        .border-top { border-top: 1px solid #e5e5e5; }
-        .border-bottom { border-bottom: 1px solid #e5e5e5; }
-
-        .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-        /* Sticky footer styles
-        -------------------------------------------------- */
-        html {
-          position: relative;
-          min-height: 100%;
-        }
-        body {
-          margin-bottom: 60px; /* Margin bottom by footer height */
-        }
-        .footer {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 60px; /* Set the fixed height of the footer here */
-          line-height: 60px; /* Vertically center the text there */
-          background-color: #f5f5f5;
-        }
-
-        .container {
-          padding: 0 15px;
-
-        }
-
-
-.container {
-                      width: 100%;
-                      display: block;
-                      background: #fefefe;
-                      padding-bottom: 10px;
-}
-
-        @media (min-width: 680px)
-        .container {
-            margin: 45px auto;
-        }
-        @media (min-width: 1340px)
-        .container {
-            max-width: 1290px !important;
-        }
-    </style>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-
-    <style>
-      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-        display: block;
-        font-family: "Roboto Condensed",sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        margin: 0 0 0.5em;
-        line-height: 1.4;
-      }
-
-      nav a {
-        font-size: 14px;
-        line-height: 1.6;
-        font-family: Roboto,sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-size-adjust: 100%;
-        border-radius: 0px;
-        display: inline-block;
-        text-decoration: none;
-        padding: 15px 25px;
-        padding-left: 0px;
-        white-space: nowrap;
-        color: #333;
-      }
-
-      .__logo, .__logo a {
-        display: inline-block;
-        color: #333;
-        font-family: "Roboto Condensed",sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-transform: capitalize;
-        font-size: 25px;
-      }
-
-      p {
-        display: block;
-        margin-bottom: 25px;
-        font-size: 14px;
-        line-height: 28px;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/build.css">
   </head>
 
   <body>
     {% include 'menu.twig' %}
-
-
         <!-- Begin page content -->
         <main class="container">
     <div class="row">
 
 
       <div class="col-lg-8">
+        <pre><code class="php">&lt;?php
+
+require 'vendor/autoload.php';
+
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
+//Создаем экземпляр класса электронной таблицы
+$spreadsheet = new Spreadsheet();
+//Получаем текущий активный лист
+$sheet = $spreadsheet-&gt;getActiveSheet();
+// Записываем в ячейку A1 данные
+$sheet-&gt;setCellValue('A1', 'Hello my Friend!');
+
+$writer = new Xlsx($spreadsheet);
+//Сохраняем файл в текущей папке, в которой выполняется скрипт.
+//Чтобы указать другую папку для сохранения.
+//Прописываем полный путь до папки и указываем имя файла
+$writer-&gt;save('hello.xlsx');
+</code></pre>
         {% block content %}{% endblock %}
 
         <div class="addthis_inline_share_toolbox"></div>
@@ -209,8 +106,6 @@
       </div>
     </footer>
 
-
-    <script type="text/javascript" src="/js/highlighter.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116138745-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -218,10 +113,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-116138745-1');
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-
-    <!-- debug -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d4becb398116811"></script>
+    <script type="text/javascript" src="/js/build-min.js"></script>
   </body>
 </html>

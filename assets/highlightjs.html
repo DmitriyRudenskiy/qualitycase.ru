@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../public/css/build.css">
+    <title>Hello, world!</title>
+</head>
+<body>
+<h1>Hello, world!</h1>
+
+<pre><code class="php">&lt;?php
+
+require 'vendor/autoload.php';
+
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
+//Создаем экземпляр класса электронной таблицы
+$spreadsheet = new Spreadsheet();
+//Получаем текущий активный лист
+$sheet = $spreadsheet-&gt;getActiveSheet();
+// Записываем в ячейку A1 данные
+$sheet-&gt;setCellValue('A1', 'Hello my Friend!');
+
+$writer = new Xlsx($spreadsheet);
+//Сохраняем файл в текущей папке, в которой выполняется скрипт.
+//Чтобы указать другую папку для сохранения.
+//Прописываем полный путь до папки и указываем имя файла
+$writer-&gt;save('hello.xlsx');
+</code></pre>
+
+<script src="../public/js/build-min.js"></script>
+</body>
+</html>
