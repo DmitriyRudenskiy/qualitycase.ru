@@ -61,7 +61,7 @@
     "gulp-load-plugins": "^1.6.0",
     "gulp-minify": "^3.1.0",
     "gulp-strip-css-comments": "^2.0.0",
-    "lodash": ">=4.17.13",
+    "lodash": ">=4.17.19",
     "prettier": "^1.18.2",
     "supervisor": "^0.12.0"
   },
