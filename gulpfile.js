@@ -8,12 +8,11 @@ const cssmin = require('gulp-cssmin');
 function javascript () {
     // place code for your default task here
     return gulp.src([
+        'assets/js/jquery-3.2.1.slim.min.js',
+        'assets/js/bootstrap.min.js',
         'assets/js/highlight.js',
         'assets/js/main.js'
     ])
-        .pipe(babel({
-            presets: ['@babel/preset-env']
-        }))
         .pipe(concat('build.js'))
         .pipe(minify())
         .pipe(gulp.dest('public/js'))

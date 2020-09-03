@@ -12,7 +12,25 @@
   </head>
 
   <body>
-    {% include 'menu.twig' %}
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container"><a href="https://themes.getbootstrap.com" class="navbar-brand" href="/"><span>Q</span>uality<span></span>C</span>ase</a>
+      <div class="d-flex ml-auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNavbar" aria-controls="globalNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      </div>
+      <div class="collapse navbar-collapse" id="globalNavbar">
+
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav d-none d-lg-flex ml-2">
+            {% include 'menu.twig' %}
+        </ul>
+        <ul class="navbar-nav d-lg-none">
+          <li class="nav-item-divider"></li>
+            {% include 'menu.twig' %}
+        </ul>
+      </div>
+    </div>
+  </nav>
         <!-- Begin page content -->
         <main class="container">
     <div class="row">
