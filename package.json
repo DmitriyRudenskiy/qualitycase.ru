@@ -12,9 +12,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "HOST=0.0.0.0 PORT=8080 ./node_modules/.bin/supervisor src/index.js",
-    "test": "./node_modules/.bin/jest --notify",
-    "pretty": "./node_modules/.bin/prettier --tab-width 4 --no-semi --single-quote --trailing-comma=none --end-of-line=lf --write '{src,tests}/**/*.js'",
-    "lint": "./node_modules/.bin/eslint ./src --color",
+    "test": "jest --notify",
+    "pretty": "prettier --tab-width 4 --no-semi --single-quote --trailing-comma=none --end-of-line=lf --write '{src,tests}/**/*.js'",
+    "lint": "eslint ./src --color",
     "format": "eslint lib test --fix",
     "lint2": "eslint lib test",
     "test2": "eslint lib test && nyc ava",
@@ -27,30 +27,30 @@
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "dotenv": "^6.2.0",
-    "koa": "^2.8.1",
-    "koa-body": "^4.1.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
     "koa-helmet": "^4.2.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "koa-swig": "^2.2.1",
-    "sequelize": "^5.16.0",
+    "sequelize": "^5.22.4",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.5",
-    "@babel/core": "^7.11.5",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.5",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.15.2",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-utils": ">=1.4.1",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^22.21.0",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-utils": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
@@ -61,8 +61,8 @@
     "gulp-load-plugins": "^1.6.0",
     "gulp-minify": "^3.1.0",
     "gulp-strip-css-comments": "^2.0.0",
-    "lodash": ">=4.17.13",
-    "prettier": "^1.18.2",
+    "lodash": "^4.17.21",
+    "prettier": "^1.19.1",
     "supervisor": "^0.12.0"
   },
   "babel": {
@@ -107,5 +107,16 @@
     "plugins": [
       "jest"
     ]
-  }
+  },
+  "description": "# Установите пакеты     npm i",
+  "bugs": {
+    "url": "https://github.com/DmitriyRudenskiy/qualitycase.ru/issues"
+  },
+  "homepage": "https://github.com/DmitriyRudenskiy/qualitycase.ru#readme",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": ""
 }
