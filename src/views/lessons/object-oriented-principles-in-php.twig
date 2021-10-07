@@ -1,0 +1,665 @@
+{% set title = 'Практика для начинающих PHP' %}
+
+{% extends "../layouts/app.twig" %}
+
+{% block content %}
+    <h1 class="mt-4">{{ title }}.</h1>
+    <ol class="episode-list ">
+        <li id="chapter-1">
+            <div class="tw-relative tw-flex tw-items-center tw-w-full tw-bg-grey-panel tw-rounded-lg tw-p-4 tw-cursor-pointer">
+                <h2 title="Формирует" class="tw-font-bold tw-text-xl md:tw-text-lg tw-text-black"><span
+                            class="tw-text-lg md:tw-text-base"><font style="vertical-align: inherit;"><font
+                                    style="vertical-align: inherit;">Секция 1</font></font></span> <span
+                            class="tw-w-px tw-inline-block tw-mx-2 lg:tw-mx-4 tw-bg-grey-light tw-align-middle"
+                            style="height: 30px;"></span><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">
+                            Формирует
+                        </font></font></h2>
+                <div class="circle tw-w-5 tw-h-5 tw-ml-auto tw-flex tw-bg-grey-light tw-items-center tw-bg-languages tw-text-languages"
+                     style="display: none;"><a
+                            href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php&amp;usg=ALkJrhg8W8phzkcF_JKNC_QbI6iyfXzzQA#"
+                            class="position tw-text-white hover:tw-text-black md:tw-text-lg tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center">
+                        <svg width="40%" height="100%" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                             style="top: 0.7px;">
+                            <g fill="#FFF" fill-rule="evenodd">
+                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                            </g>
+                        </svg>
+                    </a></div>
+                <button class="tw-p-3 tw-absolute tw-right-0 tw-mr-4 tw-opacity-0"
+                        style="transition: opacity 0.3s ease 0s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 12 9">
+                        <g fill="none" fill-rule="evenodd" opacity=".497">
+                            <path d="M-6-7h24v24H-6z" stroke="#000" stroke-opacity=".012" stroke-width="0"></path>
+                            <path fill="#000" d="M1.41.84L6 5.42 10.59.84 12 2.25l-6 6-6-6z"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <ol class="tw-py-2" style="">
+                <li id="episode-1619"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            01
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 1</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 4:42
+                                            </font></font></p>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/1&amp;usg=ALkJrhgS6-aFazLNr7eW0twTHRUWEzyP-g"
+                                       title="Классы" class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Классы
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Начнем
+                                            с введения в классы в PHP. </font><font style="vertical-align: inherit;">Мне
+                                            нравится думать о классе как о схеме или шаблоне, который определяет общую
+                                            структуру и поведение некоторой концепции в вашей кодовой
+                                            базе.</font></font></p></div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1620"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            02
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 2</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 9:24
+                                            </font></font></p>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/2&amp;usg=ALkJrhjbb9KV5hmae-LsNaXZUVx00cRYHA"
+                                       title="Объекты" class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Объекты
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Если
+                                            класс является планом, то объект является экземпляром (или реализацией)
+                                            этого плана. </font><font class="" style="vertical-align: inherit;">В этом
+                                            уроке вы узнаете, как создать несколько экземпляров класса, как определить и
+                                            установить внутреннее состояние и как объявить статические конструкторы,
+                                            которые лучше отражают то, как вы могли бы говорить в реальной жизни.</font></font>
+                                </p></div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1625"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            03
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 3</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 10:47
+                                            </font></font></p>
+                                    <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">Свободно</font></font></span>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/3&amp;usg=ALkJrhhzvtE_STjDkeQRB-2GczNj29JCHw"
+                                       title="наследование" class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                наследование
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Наследование
+                                            позволяет одному классу наследовать черты и поведение другого
+                                            класса. </font><font style="vertical-align: inherit;">Это должно сразу иметь
+                                            смысл, так же как ребенок наследует характеристики от своих
+                                            родителей. </font><font style="vertical-align: inherit;">В этом уроке мы
+                                            рассмотрим несколько примеров наследования в действии.</font></font></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1627"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            04
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 4</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 8:00
+                                            </font></font></p>
+                                    <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">Свободно</font></font></span>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/4&amp;usg=ALkJrhgc_EyFm7blwVt2mJ3xWNDvAewwGQ"
+                                       title="Абстрактные классы" class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Абстрактные классы
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Абстрактный
+                                            класс предоставляет шаблон - или основу - для любых подклассов. </font><font
+                                                class="" style="vertical-align: inherit;">В этом уроке мы рассмотрим
+                                            пример, демонстрирующий, как, почему и когда вы можете обратиться к
+                                            абстрактному классу.</font></font></p></div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1634"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            05
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 5</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 8:29
+                                            </font></font></p>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/5&amp;usg=ALkJrhgiD1he0us1s2GArdQx-K0abwOUEQ"
+                                       title="Рукопожатия и интерфейсы" class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Рукопожатия и интерфейсы
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Думайте
+                                            об интерфейсе как о классе без поведения. </font><font
+                                                style="vertical-align: inherit;">Вместо этого он описывает условия
+                                            конкретного контракта. </font><font style="vertical-align: inherit;">Любой
+                                            класс, </font></font><em><font style="vertical-align: inherit;"><font
+                                                    style="vertical-align: inherit;">подписывающий</font></font></em><font
+                                            style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                            этот контракт, должен соблюдать эти условия. </font><font
+                                                style="vertical-align: inherit;">Давайте рассмотрим эту идею на примере
+                                            подписки на рассылку новостей.</font></font></p></div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1646"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            06
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 6</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 12:28
+                                            </font></font></p>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/6&amp;usg=ALkJrhgsrt3CU5L39vHJ4tVvntUPEMAa9w"
+                                       title="Инкапсуляция" class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Инкапсуляция
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Инкапсуляция
+                                            позволяет классу передавать внешнему миру сигналы о том, что определенные
+                                            внутренние компоненты являются частными и к ним нельзя
+                                            обращаться. </font><font style="vertical-align: inherit;">Итак, по сути,
+                                            инкапсуляция - это общение.</font></font></p></div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1650"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            07
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 7</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 8:47
+                                            </font></font></p>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/7&amp;usg=ALkJrhg9Sx4x44DUAbKeRsqZ56fp3Vr10A"
+                                       title="Композиция объекта и абстракции"
+                                       class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Композиция объекта и абстракции
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Переходим
+                                            к композиции объекта. </font><font style="vertical-align: inherit;">Чтобы
+                                            разбить это на простейшие термины, композиция - это когда один объект
+                                            содержит указатель на другой объект. </font><font
+                                                style="vertical-align: inherit;">Это позволяет нам создавать сложные
+                                            функции, комбинируя различные типы.</font></font></p></div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1655"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            08
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 8</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 13:40
+                                            </font></font></p>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/8&amp;usg=ALkJrhiLUJvOqVV8W-0fx_KMPhOVbHH2xA"
+                                       title="Объекты-ценности и изменчивость"
+                                       class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Объекты-ценности и изменчивость
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Объект
+                                            значения - это объект, равенство которого определяется его данными (или
+                                            значением), а не какой-либо конкретной идентичностью. </font><font
+                                                style="vertical-align: inherit;">Чтобы проиллюстрировать это,
+                                            представьте себе три пятидолларовых купюры, лежащие на столе. </font><font
+                                                style="vertical-align: inherit;">Отличается ли одна купюра от двух
+                                            других? </font><font style="vertical-align: inherit;">С нашей точки зрения,
+                                            нет. </font><font style="vertical-align: inherit;">Пять долларов - это пять
+                                            долларов независимо от того, какую купюру вы выберете. </font><font
+                                                style="vertical-align: inherit;">Однако сравните это с двумя людьми с
+                                            одинаковыми именем и фамилией. </font><font
+                                                style="vertical-align: inherit;">Они идентичны или у каждого человека
+                                            уникальная личность? </font><font class="" style="vertical-align: inherit;">Конечно,
+                                            в этом случае последний ответ правильный.</font></font></p></div>
+                        </div>
+                    </div>
+                </li>
+                <li id="episode-1659"
+                    class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+                    <div class="episode-list-index tw-relative ">
+                        <div>
+                            <div class="episode-list-index-wrap tw-text-grey-light">
+                                <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                                     style="width: 60px; height: 60px; margin-top: 10px;">
+                                    <button class="tw-cursor-pointer">
+                                        <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                            <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!---->
+                                                <!---->
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                      stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                                      stroke-dasharray="100, 100" class=""></path>
+                                            </svg>
+                                            <div class="tw-absolute">
+                                                <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                                     style="display: none;">
+                                                    <g fill="#FFF" fill-rule="evenodd">
+                                                        <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                        <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="tw-text-black md:tw-text-lg"><font
+                                                            style="vertical-align: inherit;"><font
+                                                                style="vertical-align: inherit;">
+                                                            09
+                                                        </font></font></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-list-details tw-flex-1 tw-border-0 mobile:tw-border-b-0">
+                        <div>
+                            <div>
+                                <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                            class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 9</span>
+                                    <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                             viewBox="0 0 13 13"
+                                             class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                            <path fill-rule="evenodd"
+                                                  d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                        </svg>
+                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Продолжительность 16:56
+                                            </font></font></p>
+                                </div>
+                                <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                                    <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/object-oriented-principles-in-php/episodes/9&amp;usg=ALkJrhiJNaFp1GrFiDl3ffWbXFq1t4m_dg"
+                                       title="Исключения" class=" tw-text-black hover:tw-text-black"><font
+                                                style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                Исключения
+                                            </font></font></a></h4></div>
+                            <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Каждый
+                                            раз, когда ваш код сталкивается с неожиданным состоянием, с которым он не
+                                            может справиться, должно быть сгенерировано исключение. </font><font
+                                                style="vertical-align: inherit;">В этом уроке мы рассмотрим «почему, как
+                                            и когда» исключений, а также некоторые интересные способы улучшения
+                                            читабельности с помощью именования и статических
+                                            конструкторов.</font></font></p></div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </li>
+    </ol>
+{% endblock %}

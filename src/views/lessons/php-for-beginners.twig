@@ -1,0 +1,1625 @@
+{% set title = 'Практика для начинающих PHP' %}
+
+{% extends "../layouts/app.twig" %}
+
+{% block content %}
+    <h1 class="mt-4">{{ title }}.</h1>
+
+    <ol>
+        <li id="episode-778"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg" style=""><font
+                                                    style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">
+                                                    01
+                                                </font></font></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 1</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Продолжительность 3:51
+                                    </font></font></p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">Свободно</font></font></span></div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/1&amp;usg=ALkJrhjFk-tSYYJWQAIEsUbNFlPVsFfrFQ"
+                               title="Шаг 1. Установите PHP" class=" tw-text-black hover:tw-text-black"><font
+                                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Шаг 1. Установите PHP
+                                    </font></font></a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Итак, вы
+                                    решили стать веб-разработчиком? </font><font style="vertical-align: inherit;">Отличный,
+                                    отличный выбор. </font><font style="vertical-align: inherit;">На этом этапе у вас
+                                    есть базовое понимание HTML и CSS, и теперь вы готовы сделать следующий шаг. </font><font
+                                        style="vertical-align: inherit;">Правильно? </font><font
+                                        style="vertical-align: inherit;">Большой! </font><font
+                                        style="vertical-align: inherit;">Давайте изучим PHP с нуля.</font></font></p>
+                        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Шаг 1.
+                                        Домашнее задание:</font></font></strong><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> установите
+                                    PHP 7, последнюю версию на момент записи, на свой компьютер, используя один из
+                                    описанных выше методов. </font><font style="vertical-align: inherit;">Вы можете
+                                    использовать </font></font><a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://brew.sh/&amp;usg=ALkJrhg88OmgrEP3RNjPFo5kAy480g40Iw"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">Homebrew</font></font></a><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> на Mac или,
+                                    возможно, </font></font><a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://www.mamp.info/en/&amp;usg=ALkJrhi_6grLbHZdtnW_yF_QFTIe2YBMqQ"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">MAMP</font></font></a><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    , </font></font><a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=http://www.wampserver.com/en/&amp;usg=ALkJrhgjOeQjFrc_ehfXNj1xFMsDilrb0w"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">WAMP</font></font></a><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> или </font></font><a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://www.apachefriends.org/index.html&amp;usg=ALkJrhgK3a-KAVq9bCb3fa4NhLw_AtTxbA"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">XAMPP</font></font></a><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    . </font><font style="vertical-align: inherit;">Любой из этих вариантов
+                                    подойдет. </font><font style="vertical-align: inherit;">Чтобы убедиться, что вы
+                                    выполнили домашнее задание, откройте командную строку и
+                                    запустите </font></font><code>php -v</code><font
+                                    style="vertical-align: inherit;"><font
+                                        style="vertical-align: inherit;">. </font><font
+                                        style="vertical-align: inherit;">Там написано PHP 7? </font><font
+                                        style="vertical-align: inherit;">Congrats!</font></font></p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-779"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg"><font style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">
+                                                    02
+                                                </font></font></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 2</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Продолжительность 9:21
+                                    </font></font></p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">Свободно</font></font></span></div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/2&amp;usg=ALkJrhhfv5kl5YEk0Xv7c1YCREmbgBh-vg"
+                               title="Шаг 2. Установите правильный редактор кода"
+                               class=" tw-text-black hover:tw-text-black"><font style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">
+                                        Шаг 2. Установите правильный редактор кода
+                                    </font></font></a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Прежде чем
+                                    мы начнем, давайте убедимся, что на вашем компьютере установлен соответствующий
+                                    редактор кода. </font><font style="vertical-align: inherit;">Как вы обнаружите,
+                                    редакторы кода очень похожи на моду: у каждого свои предпочтения. </font><font
+                                        style="vertical-align: inherit;">Неважно, что вы выберете, так что выберите
+                                    один!</font></font></p>
+                        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Шаг 2
+                                        Домашнее задание:</font></font></strong><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> прямо
+                                    сейчас установите на свой компьютер подходящий редактор кода. </font><font
+                                        style="vertical-align: inherit;">Это может быть </font></font><a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://sublimetext.com/&amp;usg=ALkJrhi14sPiIilGkWM3dRgqp41vyPPaeA"><font
+                                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sublime
+                                        Text</font></font></a><font style="vertical-align: inherit;"><font
+                                        style="vertical-align: inherit;"> , </font></font><a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://atom.io/&amp;usg=ALkJrhhYy0sj8TbdWuKcQe4iDgXpQiFFGA"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">Atom</font></font></a><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    , </font></font><a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://www.jetbrains.com/phpstorm/&amp;usg=ALkJrhhGMceODERSmiRVu-azXhp5i4gK8g"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">PHPStorm</font></font></a><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> или
+                                    совершенно другой.
+                                </font></font></p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-780"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg"><font style="vertical-align: inherit;"><font
+                                                        style="vertical-align: inherit;">
+                                                    03
+                                                </font></font></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 3</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Продолжительность 7:37
+                                    </font></font></p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide"><font
+                                        style="vertical-align: inherit;"><font
+                                            style="vertical-align: inherit;">Свободно</font></font></span></div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/3&amp;usg=ALkJrhjhSuuLVnSUkmqsLmBtWbeobp62GQ"
+                               title="Шаг 3: переменные" class=" tw-text-black hover:tw-text-black"><font
+                                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Шаг 3: переменные
+                                    </font></font></a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Теперь,
+                                    когда вы готовы начать кодирование, давайте начнем с самого начала. </font><font
+                                        style="vertical-align: inherit;">Что такое переменная и зачем она вам
+                                    нужна?</font></font></p>
+                        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Шаг 3.
+                                        Домашнее задание:</font></font></strong><font
+                                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> создайте
+                                    переменную и выясните, как отобразить ее на экране или странице.</font></font></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-781"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            04
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 4</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 12:38
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/4&amp;usg=ALkJrhiYHGxYiLT-O3KWVAWG38pNm3lHnQ"
+                               title="Шаг 4: PHP и HTML" class=" tw-text-black hover:tw-text-black">
+                                Step 4: PHP and HTML
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>PHP is a
+                            language built for the web. As such, it mixes with regular HTML beautifully. Let's learn how
+                            that all works in this episode. You'll review embedding PHP in HTML, calling your first
+                            function, and fetching URL parameters.</p>
+                        <p>Step 4 Homework: Echo a sentence onto the page, while fetching a URL parameters from the
+                            address bar.
+                        </p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-782"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            05
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 5</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 3:46
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/5&amp;usg=ALkJrhhIwXcXlcEUxt4_olWc0JX8reU0wA"
+                               title="Шаг 5: отделите логику PHP от презентации"
+                               class=" tw-text-black hover:tw-text-black">
+                                Step 5: Separate PHP Logic From Presentation
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>We'll
+                            touch on a slightly higher level topic in this episode, but only lightly. If you stick with
+                            it long enough, you'll begin to hear the phrase "separation of concerns." At our current
+                            skill level, this means we should give consideration to the fact that, at the moment, our
+                            PHP logic and HTML presentation are a bit too intertwined. Perhaps we can separate these
+                            concerns.
+                        </p>
+                        <p><strong>Step 5 Homework: </strong>Play around with creating a new file, preparing a few
+                            variables, and then loading a separate "view" file to present the HTML.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-783"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            06
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 6</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 7:44
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/6&amp;usg=ALkJrhj2CZoLKxAepC_oGcYSIL0o6WF1TQ"
+                               title="Шаг 6: понимание массивов" class=" tw-text-black hover:tw-text-black">
+                                Step 6: Understanding Arrays
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>Let's
+                            learn about a new construct: arrays. Think of them as primitive collections of related data.
+                            Maybe you have an array of names, or animals, or practically anything. Even better, we can
+                            filter through this data and act upon it with ease.</p>
+                        <p><strong>Step 6 Homework: </strong> Create an array of any five animals, and then loop over
+                            them with <code>foreach</code>, and display each one within a list item.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-790"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            07
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 7</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 12:04
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/7&amp;usg=ALkJrhj77s4s3fi0GSfZGXBCTa6P29xf6Q"
+                               title="Шаг 7: ассоциативные массивы" class=" tw-text-black hover:tw-text-black">
+                                Step 7: Associative Arrays
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>We've
+                            learned about basic arrays, but you may also creative associative arrays when necessary. The
+                            only difference is that each value within the array is associated with a key. Let me show
+                            you.</p>
+                        <p><strong>Homework: </strong>Create an associative array for a <code>task</code>. This array
+                            should include such details as the title of the task, its due date, who it's assigned to,
+                            and whether it has been completed.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-791"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            08
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 8</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 10:44
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/8&amp;usg=ALkJrhgFRfKfyCjHv6hOPjE4Q-IwNP73PA"
+                               title="Шаг 8: логические значения" class=" tw-text-black hover:tw-text-black">
+                                Step 8: Booleans
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>"Boolean"
+                            is a scary, but simple term to understand. It's a data type that represents one of two
+                            values: true or false. As you'll find, you'll reference booleans constantly within your
+                            projects. So it's important that you understand this one.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-792"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            09
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 9</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 6:58
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/9&amp;usg=ALkJrhgatK8id6WaFCVcDd6S36lR8XH5iA"
+                               title="Шаг 9: условные выражения" class=" tw-text-black hover:tw-text-black">
+                                Step 9: Conditionals
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>A
+                            conditional is how we branch our logic into different paths. "If some value is true, then we
+                            want to proceed in this way. Otherwise, let's handle it in that way." As you can see,
+                            booleans and conditionals go hand-in-hand.</p>
+                        <p><strong>Homework: </strong> Continue tinkering with conditionals. Add a new boolean to your
+                            <code>task</code> array, and use its value to branch off into two different paths within
+                            your HTML.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-793"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            10
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 10</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 7:49
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/10&amp;usg=ALkJrhiUXbBHquvTNuYPZpJNOgk2Pawvqw"
+                               title="Шаг 10: Функции" class=" tw-text-black hover:tw-text-black">
+                                Step 10: Functions
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>Think of a
+                            function as a container for reusable pieces of logic. In this lesson, you'll create your
+                            very first function.</p>
+                        <p><strong>Homework: </strong>Write a function that determines if a provided age (sent through
+                            as an argument) is old enough to enter a 21-and-up night club. Have this function return a
+                            boolean, which can be used in any conditional.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-798"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            11
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 11</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 16:18
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/11&amp;usg=ALkJrhhQPuAzlXScdz3HXFtEkSxflEIWkQ"
+                               title="MySQL 101" class=" tw-text-black hover:tw-text-black">
+                                MySQL 101
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>You've
+                            only just begun learning the fundamentals of PHP, and already I'm throwing something else at
+                            you. Sorry (bows head in shame), that's just how it is; there are lots of moving pieces to
+                            your typical web application. We must take some to review databases. This is how we
+                            "remember" information. Or, in other words, if a user creates a handful of todo items, how
+                            will we remember those todos for when they return to our site next week? Well, the answer is
+                            through a database.</p>
+                        <p>As for MySQL GUIs, you might consider any of the following:</p>
+                        <ul>
+                            <li>
+                                <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=http://sequelpro.com/&amp;usg=ALkJrhi_Ic7py-zjUrjATz_R_lg0oEtKBg">Sequel
+                                    Pro</a> (Mac only)
+                            </li>
+                            <li>
+                                <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=http://www.araelium.com/querious/&amp;usg=ALkJrhhNMHCbhVdcDrZdMtA8WAWPYHwE3A">Querious</a>
+                                (Mac only)
+                            </li>
+                            <li>
+                                <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://www.navicat.com/&amp;usg=ALkJrhgdl5GLjElXDvrWUeL3SHERTSh--g">Navicat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-805"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            12
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 12</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 16:10
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/12&amp;usg=ALkJrhhbJWN_OoTL3eeigHkApYou_xBAGQ"
+                               title="Класс 101" class=" tw-text-black hover:tw-text-black">
+                                Classes 101
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>I know
+                            you're excited about MySQL, and want to fetch records using PHP. However, we need to make
+                            one quick pit stop. We must learn the basics of writing classes, and creating objects. So
+                            let's tackle that in this episode, and then I promise we'll move on to writing SQL queries
+                            with PHP.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-806"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            13
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 13</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 15:16
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/13&amp;usg=ALkJrhjjwznt3VxwfX1i92ystDG4K7slrA"
+                               title="Введение в PDO" class=" tw-text-black hover:tw-text-black">
+                                Intro to PDO
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>Now that
+                            you understand what a class is, we can get back to fetching your first results from the
+                            database. To do so, we'll leverage PHP's PDO library, and create a prepared statement.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-819"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            14
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 14</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 17:39
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/14&amp;usg=ALkJrhgQ8sT9uI1ZAS4rjV6Q7H5e3a4iOw"
+                               title="Рефакторинг PDO и сотрудники" class=" tw-text-black hover:tw-text-black">
+                                PDO Refactoring and Collaborators
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>In this
+                            episode, you'll perform your first refactor. "Refactor" is a term we use to describe the
+                            process of changing the structure of your code, without affecting the underlying behavior.
+                            I'll be pushing your limits a bit in this episode, so you may need to watch this one twice.
+                            As always, ask any questions you mind have in the comments below.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-820"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            15
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 15</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 6:27
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/15&amp;usg=ALkJrhiadYjAncYcI6ceJwQ9Cw4tFhKhVA"
+                               title="Скрыть свои секретные пароли" class=" tw-text-black hover:tw-text-black">
+                                Hide Your Secret Passwords
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>At the
+                            moment, we're hardcoding our database username and password directly within the <code>Connection</code>
+                            class. But, we don't really want to do this. It's too dangerous. Instead, let's extract any
+                            secret passwords or keys for our app into its own file, and then lock that down.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-826"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            16
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 16</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 24:19
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/16&amp;usg=ALkJrhg8SJsEqoOZjHTH1gGxnmiaeMMUPA"
+                               title="Сделать роутер" class=" tw-text-black hover:tw-text-black">
+                                Make a Router
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>Let's
+                            discuss routing in this episode. While, yes, you can create PHP files that correspond to the
+                            URI, this breaks down pretty quickly. So instead, we'll make a very basic router. This
+                            allows us to associate any URI endpoint with a controller.</p>
+                        <p>View the source for this episode <a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://github.com/laracasts/The-PHP-Practitioner-Episode-16&amp;usg=ALkJrhgwIWQsARuL2izFRSTSt3CyiEvFDA">on
+                                GitHub</a>.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-834"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            17
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 17</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 7:02
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/17&amp;usg=ALkJrhjDdgFqNESo9iCd1iamNrx4yCraag"
+                               title="Dry Up Your Views" class=" tw-text-black hover:tw-text-black">
+                                Dry Up Your Views
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>Let's take
+                            some time to work on our views. At the moment, we've been rewriting the entire wrapping HTML
+                            for every single page. Naturally, this breaks down very quickly in real life. Each time you
+                            update, say, your navigation area, you'd need to open several different view files to make
+                            the change. No thanks. Instead, let's review the first step to drying up your templates.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-838"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            18
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 18</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 13:31
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/18&amp;usg=ALkJrhhFwIEDMms05GUgDM7dZ4V3zTsIYw"
+                               title="Array Filtering" class=" tw-text-black hover:tw-text-black">
+                                Array Filtering
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>PHP's
+                            various array functions are tools that absolutely need to rest in your belt. While the good
+                            ole'<code>foreach</code> can usually get the job done, more often than not, there's a better
+                            way. In this episode, I'll introduce you to <code>array_filter</code>,
+                            <code>array_map</code>, and <code>array_column</code>.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-842"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            19
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 19</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 13:17
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/19&amp;usg=ALkJrhjcxhH_RJATizvh97cFUR8HRvMXfg"
+                               title="Forms, Request Types, and Routing" class=" tw-text-black hover:tw-text-black">
+                                Forms, Request Types, and Routing
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>Let's
+                            transition over to working with forms. If we want a form's submission to <code>POST</code>
+                            to a particular endpoint, well, our router isn't yet set up to handle that. How exactly
+                            might we associate a URI with the request type (GET, POST) that it should respond to? In
+                            this episode, we'll do a bit of refactoring for this very thing!</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-853"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            20
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 20</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 12:24
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/20&amp;usg=ALkJrhj1-UF5TvgrGv-cMCipS7lJ301pIQ"
+                               title="Dynamic Inserts With PDO" class=" tw-text-black hover:tw-text-black">
+                                Dynamic Inserts With PDO
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>So far,
+                            we've only written the logic to fetch records from the database. But now it seems that we
+                            need to, not only insert new records, but do so dynamically. It sounds like we'll need to
+                            update our <code>QueryBuilder</code> class to allow for this.</p>
+                        <p>View the source code for this episode <a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://github.com/laracasts/The-PHP-Practitioner-Episode-20&amp;usg=ALkJrhgfI7rvmGWPng3Ylra7o6YdIqPtWw">on
+                                GitHub</a>.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-863"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            21
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 21</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 4:38
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/21&amp;usg=ALkJrhjz9oORVhdYLw8r9Fzpa98TxyRlRg"
+                               title="Composer Autoloading" class=" tw-text-black hover:tw-text-black">
+                                Composer Autoloading
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>No more
+                            PHP requires! They're annoying to write, aren't they? Instead, let's take some time to
+                            switch over to <a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://getcomposer.org/&amp;usg=ALkJrhhf7kH9l2xRqFEenqdfkzzlBIq7SA">Composer</a>,
+                            which is an industry standard for not just dependency management, but also autoloading.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-864"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            22
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 22</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 7:04
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/22&amp;usg=ALkJrhhZVNx_NS9MTGoXWuhpBJRNoPJbCQ"
+                               title="Your First DI Container" class=" tw-text-black hover:tw-text-black">
+                                Your First DI Container
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>
+                            "Dependency injection Container" sounds like a super scary thing. But it's easy to
+                            understand! Think of them as boxes. Apply a label, and throw your stuff into the box. When
+                            you need them back, simply look for the corresponding label! In this episode, we'll
+                            transition from our simplistic <code>$app</code> array, to a dedicated DI container.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-865"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 23</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 17:34
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/23&amp;usg=ALkJrhgbyGAkKC-JX6_anhdcfvZ58_ghCQ"
+                               title="Refactoring to Controller Classes" class=" tw-text-black hover:tw-text-black">
+                                Refactoring to Controller Classes
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>So far in
+                            this series, our "controllers" have simply been plain PHP files. In this episode, however,
+                            we'll refactor the router to allow for loading and calling actions on a controller class. I
+                            think you'll find that this drastically simplifies our workflow.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-866"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            24
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1  mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 24</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 14:52
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/24&amp;usg=ALkJrhjjzjy2U84DB3yuFUB6hrLS61BPUQ"
+                               title="Switch to Namespaces" class=" tw-text-black hover:tw-text-black">
+                                Switch to Namespaces
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>At the
+                            moment, all of our classes share the same global namespace. But, think about it: you
+                            wouldn't throw your entire music collection into a single folder, and the same is true for
+                            your PHP classes. In this lesson, we'll switch over to dedicated namespaces, while
+                            discussing the benefits to doing so.</p></div>
+                </div>
+            </div>
+        </li>
+        <li id="episode-867"
+            class="content-item episode-list-item tw-cursor-pointer tw-mx-6 lg:tw-mx-0 tw-py-3 tw-mb-5  is-languages">
+            <div class="episode-list-index tw-relative ">
+                <div>
+                    <div class="episode-list-index-wrap tw-text-grey-light">
+                        <div class="circle tw-flex tw-items-center tw-text-grey-light"
+                             style="width: 60px; height: 60px; margin-top: 10px;">
+                            <button class="tw-cursor-pointer">
+                                <div class="tw-flex tw-items-center tw-justify-center tw-text-white">
+                                    <svg viewBox="0 0 36 36" width="100%" class="tw-text-languages"><!----> <!---->
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                              stroke="transparent" fill="#f3f3f3" stroke-width="2"
+                                              stroke-dasharray="100, 100" class=""></path>
+                                    </svg>
+                                    <div class="tw-absolute">
+                                        <svg width="18" viewBox="0 0 21 16" class="tw-inline-block tw-relative"
+                                             style="display: none;">
+                                            <g fill="#FFF" fill-rule="evenodd">
+                                                <path fill="none" d="M-3-5h27v27H-3z"></path>
+                                                <path d="M7.439 12.152l-5.037-5.36c-.447-.477-1.119-.477-1.566 0a1.204 1.204 0 0 0 0 1.667l6.603 7.03L20.086 2.025a1.204 1.204 0 0 0 0-1.668c-.447-.476-1.12-.476-1.567 0L7.44 12.152z"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="tw-text-black md:tw-text-lg">
+                                            25
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-list-details tw-flex-1 tw-border-0 mobile:tw-border-b-0">
+                <div>
+                    <div>
+                        <div class="tw-flex tw-items-center tw-leading-none tw-mb-2 "><span
+                                    class="lg:tw-hidden tw-text-xs tw-mr-6 tw-font-bold tw-text-grey-40">EPISODE 25</span>
+                            <p class="tw-text-grey-40 tw-text-xs lg:tw-text-2xs tw-font-semibold tw-inline-flex tw-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                     class="tw-mr-1 tw-fill-current tw-text-grey-40 tw-opacity-50">
+                                    <path fill-rule="evenodd"
+                                          d="M6.5 0C2.925 0 0 2.925 0 6.5S2.925 13 6.5 13 13 10.075 13 6.5 10.075 0 6.5 0zm2.967 9L6 6.913V3h1v3.391l3 1.761L9.467 9z"></path>
+                                </svg>
+                                Run Time 17:26
+                            </p>
+                            <span class="tw-bg-blue tw-text-2xs tw-text-white tw-px-3 tw-py-1 tw-uppercase tw-rounded-full tw-font-bold tw-ml-4 tw-tracking-wide">Free</span>
+                        </div>
+                        <h4 class="episode-list-title tw-mb-1 link lg:tw-leading-none tw-font-bold tw-text-xl md:tw-text-lg lg:tw-text-xl lg:tw-mb-3 tw-flex tw-items-center tw-mr-3">
+                            <a href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://laracasts.com/series/php-for-beginners/episodes/25&amp;usg=ALkJrhjT8G9ts_BSfkkmnDWOXE87J2LXlg"
+                               title="Meet Your Batteries Included Framework: Laravel"
+                               class=" tw-text-black hover:tw-text-black">
+                                Meet Your Batteries Included Framework: Laravel
+                            </a></h4></div>
+                    <div class="episode-list-excerpt lg:tw-block generic-content tw-text-black tw-text-sm"><p>It's time
+                            for you to meet my framework of choice: Laravel (duh). In this lesson, we'll review the
+                            basic folder structure, discuss how it is similar to the custom-built framework from this
+                            series, and then review why it's preferred, in this author's opinion, to choose a
+                            battle-tested solution like Laravel over manually wiring things together.</p>
+                        <p>So that brings this series to a close! Review the completed source code <a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=https://github.com/laracasts/The-PHP-Practitioner-Full-Source-Code&amp;usg=ALkJrhhM4YQ3NAkXLIhxxPhfiNeRtr7S9g">on
+                                GitHub</a>. Your next stop should be <a
+                                    href="https://translate.googleusercontent.com/translate_c?depth=1&amp;pto=aue&amp;rurl=translate.google.ru&amp;sl=en&amp;sp=nmt4&amp;tl=ru&amp;u=http://laravelfromscratch.com/&amp;usg=ALkJrhgOay3fu_DPcRKxAIlQZdEgPFJMdg">Laravel
+                                From Scratch!</a> Get to it.</p></div>
+                </div>
+            </div>
+        </li>
+    </ol>
+{% endblock %}
