@@ -5,10 +5,21 @@
 
 # Создайте базу данных
     node_modules/.bin/sequelize db:create --config=app/database/config.js
+    node_modules/.bin/sequelize db:create --config=database/config.js
+    node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js seed:generate --name Posts
+
 
 # Запустите миграцию, чтобы создать таблицы:
-    node_modules/.bin/sequelize db:migrate --migrations-path=app/database/migrations/ --config=app/database/config.js
-    
+    node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js model:generate --name=User --attributes=firstName:string,lastName:string,email:string
+
+    node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js model:generate --name Posts --attributes title:string,slug:string,body:text,position:integer,visible:BOOLEAN
+
+node node_modules/sequelize-cli/lib/sequelize --migrations-path=database/migrations db:migrate --url 'mysql://root:12345@localhost/qualitycase_ru'
+
+node node_modules/sequelize-cli/lib/sequelize --config=datab`ase/config.js` --migrations-path=database/migrations db:migrate
+
+
+
 # Запускаем сервер
     node src/
     
@@ -45,3 +56,5 @@ EDITOR=nano crontab -e
 * * * * * if [ $(ps aux | grep 'qualitycase.ru/auto_deploy.sh' | grep -v grep | wc -l | tr -s "\n") -lt 1 ]; then /var/www/qualitycase.ru/auto_deploy.sh > /dev/null 2>&1; fi
 
 npm install -g bower
+
+

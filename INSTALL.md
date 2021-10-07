@@ -18,3 +18,5 @@ systemctl enable haproxy
  
  compression algo gzip
  compression type text/css text/html text/javascript application/javascript text/plain text/xml application/json
+
+CREATE DATABASE IF NOT EXISTS qualitycase_ru;
