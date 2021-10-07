@@ -6,17 +6,16 @@
 # Создайте базу данных
     node_modules/.bin/sequelize db:create --config=app/database/config.js
     node_modules/.bin/sequelize db:create --config=database/config.js
-    node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js seed:generate --name Posts
+    node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js seed:generate --name Categories
 
 
 # Запустите миграцию, чтобы создать таблицы:
     node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js model:generate --name=User --attributes=firstName:string,lastName:string,email:string
-
     node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js model:generate --name Posts --attributes title:string,slug:string,body:text,position:integer,visible:BOOLEAN
+    node node_modules/sequelize-cli/lib/sequelize --options-path=database/options.js model:generate --name Category --attributes parent:integer,position:integer,title:string,slug:string,visible:BOOLEAN
 
-node node_modules/sequelize-cli/lib/sequelize --migrations-path=database/migrations db:migrate --url 'mysql://root:12345@localhost/qualitycase_ru'
-
-node node_modules/sequelize-cli/lib/sequelize --config=datab`ase/config.js` --migrations-path=database/migrations db:migrate
+    node node_modules/sequelize-cli/lib/sequelize --migrations-path=database/migrations db:migrate --url 'mysql://root:12345@localhost/qualitycase_ru'
+    node node_modules/sequelize-cli/lib/sequelize --config=datab`ase/config.js` --migrations-path=database/migrations db:migrate
 
 
 
